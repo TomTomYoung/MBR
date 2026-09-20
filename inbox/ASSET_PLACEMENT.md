@@ -1,8 +1,8 @@
 # 素材の配置記録
 
-2026-09-20。inboxへアップロードされた素材を確認し、画像8点、音24点（OGGとWAV原本）をリネーム・配置しました。
+2026-09-20更新。初回の画像8点・音24点に加え、追加効果音23点を配置しました。現在は画像8点、音47点（OGGとWAV原本各47点）です。背景33枚は制作資料のみ受領しており、PNG本体は未受領です。
 
-## 画像
+## 初回の画像
 
 体育館：inbox/5e875439-ed3a-4256-9b44-0927ff941ec8.png → assets/scenes/gym.png
 食堂：inbox/624183ab-beff-445d-9296-54e1bb933722.png → assets/scenes/cafeteria.png
@@ -13,9 +13,9 @@
 校内スタジオ：inbox/e12ba298-1f90-4e8d-8f60-38c56826186c.png → assets/scenes/studio.png
 正門：inbox/e7230fe7-aab5-4810-a703-1d998903df29.png → assets/scenes/gate.png
 
-スタジオは録画内だけに幕が残る修正版を採用しました。旧版はassets/source/20260920/studio-before-banner-fix.pngへ保管しました。既存41枚のSVGは保持し、PNGが存在する地点はPNG、未制作地点はSVGを読み込みます。
+スタジオは録画内だけに幕が残る修正版を採用しました。旧版はassets/source/20260920/studio-before-banner-fix.pngへ保管しました。既存41枚のSVGは保持し、PNGが存在する地点はPNG、PNG未配置地点はSVGを読み込みます。
 
-## 音
+## 初回の音24点
 
 001　残された校庭 → assets/audio/bgm/investigation.ogg（WAV原本：assets/audio/masters/bgm/investigation.wav）
 002　焼き付いた事実 → assets/audio/bgm/reconstruction.ogg（WAV原本：assets/audio/masters/bgm/reconstruction.wav）
@@ -46,7 +46,7 @@
 
 broadcast-chimeとdistant-gunshotは配置済みの予備素材です。チャイムや銃声に触れた証言へ自動的に音を付けると事実と主張を混同するため、現在の再現へは割り当てていません。
 
-assets/audio/preview.htmlで命名後の全24点を試聴できます。
+assets/audio/preview.htmlで初回24点と追加23点を合わせた全47点を試聴できます。
 
 ## 破損素材の復旧
 
@@ -55,3 +55,203 @@ assets/audio/preview.htmlで命名後の全24点を試聴できます。
 元の説明・生成コード・プロンプト・配布時チェックサムはassets/source/20260920に保管しました。ここにある旧README・catalog・SHA256SUMSは配布時の仮番号を記録した資料です。現行の配置先はassets/asset-manifest.jsonが正本です。
 
 不足素材：[MISSING_ASSETS.md](MISSING_ASSETS.md)。
+
+## 追加素材01：効果音22項目・23音源
+
+受領時55ファイルのSHA256はすべて一致し、OGG23点・WAV23点をデコードできました。追加音源はすでに用途名が付いていたため、その名称を本番名として採用し、ディレクトリを移しました。
+
+025　放送卓スイッチ
+
+受領：inbox/audio_ogg/broadcast-switch.ogg、inbox/audio_wav/broadcast-switch.wav
+
+配置：assets/audio/sfx/broadcast-switch.ogg、assets/audio/masters/sfx/broadcast-switch.wav
+
+使用：case-33:0（行番号は0から）。
+
+026　椅子と金属食器の転倒
+
+受領：inbox/audio_ogg/chair-fall-tableware.ogg、inbox/audio_wav/chair-fall-tableware.wav
+
+配置：assets/audio/sfx/chair-fall-tableware.ogg、assets/audio/masters/sfx/chair-fall-tableware.wav
+
+使用：case-03:0（行番号は0から）。
+
+027　重い辞典の返却口への落下
+
+受領：inbox/audio_ogg/heavy-book-return.ogg、inbox/audio_wav/heavy-book-return.wav
+
+配置：assets/audio/sfx/heavy-book-return.ogg、assets/audio/masters/sfx/heavy-book-return.wav
+
+使用：case-23:0（行番号は0から）。
+
+028　本が床へ落ちる音
+
+受領：inbox/audio_ogg/book-drop.ogg、inbox/audio_wav/book-drop.wav
+
+配置：assets/audio/sfx/book-drop.ogg、assets/audio/masters/sfx/book-drop.wav
+
+使用：case-26:0（行番号は0から）。
+
+029　衣装の擦れと杖の一打
+
+受領：inbox/audio_ogg/cloth-cane.ogg、inbox/audio_wav/cloth-cane.wav
+
+配置：assets/audio/sfx/cloth-cane.ogg、assets/audio/masters/sfx/cloth-cane.wav
+
+使用：case-34:0（行番号は0から）。
+
+030　高所足場の金具
+
+受領：inbox/audio_ogg/catwalk-metal.ogg、inbox/audio_wav/catwalk-metal.wav
+
+配置：assets/audio/sfx/catwalk-metal.ogg、assets/audio/masters/sfx/catwalk-metal.wav
+
+使用：case-15:0（行番号は0から）。
+
+031　配達箱の開扉と封筒
+
+受領：inbox/audio_ogg/delivery-envelope.ogg、inbox/audio_wav/delivery-envelope.wav
+
+配置：assets/audio/sfx/delivery-envelope.ogg、assets/audio/masters/sfx/delivery-envelope.wav
+
+使用：case-04:0（行番号は0から）。
+
+032　鏡板の軋みとカメラの滑り
+
+受領：inbox/audio_ogg/mirror-camera.ogg、inbox/audio_wav/mirror-camera.wav
+
+配置：assets/audio/sfx/mirror-camera.ogg、assets/audio/masters/sfx/mirror-camera.wav
+
+使用：case-10:0（行番号は0から）。
+
+033　台車停止と鋏を置く音
+
+受領：inbox/audio_ogg/cart-stop-scissors.ogg、inbox/audio_wav/cart-stop-scissors.wav
+
+配置：assets/audio/sfx/cart-stop-scissors.ogg、assets/audio/masters/sfx/cart-stop-scissors.wav
+
+使用：case-25:0（行番号は0から）。
+
+034　投影機の定常回転
+
+受領：inbox/audio_ogg/projector-loop.ogg、inbox/audio_wav/projector-loop.wav
+
+配置：assets/audio/sfx/projector-loop.ogg、assets/audio/masters/sfx/projector-loop.wav
+
+使用：case-16:0（行番号は0から）。
+
+035　投影機の回転停止
+
+受領：inbox/audio_ogg/projector-stop.ogg、inbox/audio_wav/projector-stop.wav
+
+配置：assets/audio/sfx/projector-stop.ogg、assets/audio/masters/sfx/projector-stop.wav
+
+使用：case-36:0（行番号は0から）。
+
+036　衣装掛けの転倒
+
+受領：inbox/audio_ogg/clothes-rack-fall.ogg、inbox/audio_wav/clothes-rack-fall.wav
+
+配置：assets/audio/sfx/clothes-rack-fall.ogg、assets/audio/masters/sfx/clothes-rack-fall.wav
+
+使用：case-20:0（行番号は0から）。
+
+037　箱の崩落
+
+受領：inbox/audio_ogg/crate-collapse.ogg、inbox/audio_wav/crate-collapse.wav
+
+配置：assets/audio/sfx/crate-collapse.ogg、assets/audio/masters/sfx/crate-collapse.wav
+
+使用：case-39:0（行番号は0から）。
+
+038　無人の自動演奏ピアノ
+
+受領：inbox/audio_ogg/player-piano.ogg、inbox/audio_wav/player-piano.wav
+
+配置：assets/audio/sfx/player-piano.ogg、assets/audio/masters/sfx/player-piano.wav
+
+使用：case-35:0（行番号は0から）。
+
+039　案内板の切替
+
+受領：inbox/audio_ogg/sign-flip.ogg、inbox/audio_wav/sign-flip.wav
+
+配置：assets/audio/sfx/sign-flip.ogg、assets/audio/masters/sfx/sign-flip.wav
+
+使用：case-27:0（行番号は0から）。
+
+040　鍵束
+
+受領：inbox/audio_ogg/keys-jingle.ogg、inbox/audio_wav/keys-jingle.wav
+
+配置：assets/audio/sfx/keys-jingle.ogg、assets/audio/masters/sfx/keys-jingle.wav
+
+使用：case-05:0、case-28:0（行番号は0から）。
+
+041　排水の終わり
+
+受領：inbox/audio_ogg/drain-finish.ogg、inbox/audio_wav/drain-finish.wav
+
+配置：assets/audio/sfx/drain-finish.ogg、assets/audio/masters/sfx/drain-finish.wav
+
+使用：case-09:0（行番号は0から）。
+
+042　医療器具の接触
+
+受領：inbox/audio_ogg/medical-tools.ogg、inbox/audio_wav/medical-tools.wav
+
+配置：assets/audio/sfx/medical-tools.ogg、assets/audio/masters/sfx/medical-tools.wav
+
+使用：case-13:0（行番号は0から）。
+
+043　警告ブザーの停止
+
+受領：inbox/audio_ogg/warning-buzzer-stop.ogg、inbox/audio_wav/warning-buzzer-stop.wav
+
+配置：assets/audio/sfx/warning-buzzer-stop.ogg、assets/audio/masters/sfx/warning-buzzer-stop.wav
+
+使用：case-08:0（行番号は0から）。
+
+044　送信機の起動
+
+受領：inbox/audio_ogg/transmitter-start.ogg、inbox/audio_wav/transmitter-start.wav
+
+配置：assets/audio/sfx/transmitter-start.ogg、assets/audio/masters/sfx/transmitter-start.wav
+
+使用：case-32:0（行番号は0から）。
+
+045　扉を叩く音
+
+受領：inbox/audio_ogg/door-knock.ogg、inbox/audio_wav/door-knock.wav
+
+配置：assets/audio/sfx/door-knock.ogg、assets/audio/masters/sfx/door-knock.wav
+
+使用：case-31:0（行番号は0から）。
+
+046　予約端末の作動
+
+受領：inbox/audio_ogg/terminal-scheduled.ogg、inbox/audio_wav/terminal-scheduled.wav
+
+配置：assets/audio/sfx/terminal-scheduled.ogg、assets/audio/masters/sfx/terminal-scheduled.wav
+
+使用：case-07:3（行番号は0から）。
+
+047　報告書の印字
+
+受領：inbox/audio_ogg/report-print.ogg、inbox/audio_wav/report-print.wav
+
+配置：assets/audio/sfx/report-print.ogg、assets/audio/masters/sfx/report-print.wav
+
+使用：case-24:2（行番号は0から）。
+
+追加23音源を24箇所の客観描写へ接続しました。鍵束はcase-05とcase-28で共有します。case-07の予約端末は行3、case-24の印字は行2で鳴らし、それ以前の行では鳴らしません。証言の内容・真偽から音を選びません。
+
+投影機の定常音はcase-16の行0で繰り返し、次の行への移動、再現の終了・中断、音OFF、タブ非表示で止めます。case-36の停止描写には別ファイルprojector-stopを使います。音OFFやタブ非表示で止めた効果音は自動再開しません。
+
+制作資料はassets/source/20260920-additional-01へ保存しました。試聴ページはassets/audio/additional-preview.htmlへ移し、現在の音源パスへ修正しました。全47点の試聴ページも更新しています。
+
+## 背景33枚の受領状況
+
+今回のアップロードは音源と制作資料のみです。image_selection.jsonに採用画像名と予定配置先はありますが、PNG本体はありません。assets/asset-manifest.jsonのpending_imagesへ33件を登録し、状態をgenerated-not-received（制作済み・未受領）としました。ゲームは現在のPNG8地点とSVG33地点を表示します。
+
+装備点検室・避難所・非常階段・最終報告室は、対応表にある修正版を受領後に採用します。残る未制作の追加演出素材はMISSING_ASSETS.mdを参照してください。

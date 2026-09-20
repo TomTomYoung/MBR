@@ -64,7 +64,7 @@ export class ArchiveAudio {
     if (!this.enabled || this.suspended) return;
     const audio = this.make(key);
     if (!audio) return;
-    audio.loop = false;
+    // Looping scene effects end with the current replay line via stopEffects().
     if (this.effects.size >= 6) {
       const oldest = this.effects.values().next().value;
       oldest.pause();
