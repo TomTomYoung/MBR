@@ -2,6 +2,8 @@
 
 証拠と証言を手掛かりに、四十人の生徒の最期を調べるコマンド選択型ミステリーです。HTML・JavaScript・Phaser 3で実装しています。
 
+[ブラウザで遊ぶ（GitHub Pages）](https://tomtomyoung.github.io/MBR/)
+
 ![保健室の探索画面](doc/screenshots/exploration.png)
 
 ## 起動
@@ -43,6 +45,8 @@ npm run docs
 ```
 
 npm run buildでdistへ静的ファイルを出力します。相対パスでビルドするためサブディレクトリにも配置できます。npm run previewでビルド結果を確認できます。
+
+mainへの更新は、テスト・資料整合性・ビルド・ブラウザ操作検査に成功するとGitHub Pagesへ自動公開します。初期設定と再公開の手順は[公開手順](doc/DEPLOYMENT.md)を参照してください。
 
 ![全地点を解放した地図](doc/screenshots/map.png)
 
