@@ -1,0 +1,470 @@
+# 不足素材一覧
+
+更新日：2026-09-20。現在の実装・配置済み素材に基づく制作リストです。
+
+画像は8地点の漫画線画を配置済みです。残る33地点には既存SVGが表示されるため、ゲームの進行は可能です。以下33枚は画風を揃えるための未制作背景です。
+
+音はBGM4曲・環境音2種・効果音18種を配置済みです。下記22項目は本文の情景をより正確に音へ反映するための追加素材です。未制作の音を別の出来事の音で埋めず、現在は該当の字幕を表示します。
+
+共通画風：シンプルな漫画の白黒線画。細い輪郭線、限定した黒ベタとスクリーントーン、広い白い余白。デスゲームの現場報告書に添えた客観的な記録画。横長16:9、基準1280×720以上。人型・文字・識別札は必要に応じてゲーム側で重ね、推理上必要な関係は本文に合わせます。
+
+## 背景33枚
+
+### 01 講堂（lecture）
+
+予定配置先：assets/scenes/lecture.png
+
+区画：芸術棟。情景：壇上の演台と並んだ椅子。壁際の点検口は保健室の天井へ続く。
+
+演台と椅子、保健室の天井へ通じる壁際の点検口を見せます。
+
+### 02 プール更衣室（changing）
+
+予定配置先：assets/scenes/changing.png
+
+区画：水辺。情景：ロッカーの列の奥に、小さな点検扉。プールの水音だけが残る。
+
+ロッカー列と奥の小さな点検扉を分けて描きます。
+
+### 03 天井点検路（ceiling）
+
+予定配置先：assets/scenes/ceiling.png
+
+区画：保健棟。情景：細い梁の間から寝台が見える。通常の廊下からは見えない入口だ。
+
+細い梁と寝台を見下ろす開口、講堂側の入口を示します。
+
+### 04 医務室（medical）
+
+予定配置先：assets/scenes/medical.png
+
+区画：保健棟。情景：器具台に一つだけ空いた枠。床の線は安置庫へ向かっている。
+
+器具台の空き枠と、安置庫へ向かう床の線を残します。
+
+### 05 安置庫（morgue）
+
+予定配置先：assets/scenes/morgue.png
+
+区画：保健棟。情景：二つの台に名札が掛かる。文字と、それが指す人間は同じものではない。
+
+二つの台と二枚の名札を別物として描きます。名札の内容や遺体の同定は本文で扱います。
+
+### 06 防音相談室（consult）
+
+予定配置先：assets/scenes/consult.png
+
+区画：保健棟。情景：重い扉の向こうに丸い卓。外の物音は届かない。
+
+丸い卓、机の下、重い防音扉を読み取りやすくします。
+
+### 07 救護廊下（rescue）
+
+予定配置先：assets/scenes/rescue.png
+
+区画：保健棟。情景：台車の輪と、立ち上がった人の足跡が交わる。
+
+台車と車輪痕、交差する足跡を区別します。
+
+### 08 小劇場（theater）
+
+予定配置先：assets/scenes/theater.png
+
+区画：芸術棟。情景：暗い舞台の奥に二つの影がある。客席は空だ。
+
+地点の接続と調査本文で必要な設備の位置を保ちます。
+
+### 09 衣装庫（wardrobe）
+
+予定配置先：assets/scenes/wardrobe.png
+
+区画：芸術棟。情景：前室と控室のあいだに両面ロッカー。袖口だけが、衣装と違う記憶を残す。
+
+前室と控室、両面ロッカーの位置関係を示します。
+
+### 10 遮光観察室（darkroom）
+
+予定配置先：assets/scenes/darkroom.png
+
+区画：芸術棟。情景：片側からだけ透ける窓。どちら側にいたかで、同じ言葉の意味が変わる。
+
+片側から透ける窓、観察側のスイッチ、遮光扉を明確にします。
+
+### 11 旧写真室（photo）
+
+予定配置先：assets/scenes/photo.png
+
+区画：芸術棟。情景：大きな枠のある壁と古い撮影台。写真が一枚、床に落ちている。
+
+鏡壁、撮影窓の台、床の写真を区別します。
+
+### 12 展示ホール（exhibition）
+
+予定配置先：assets/scenes/exhibition.png
+
+区画：芸術棟。情景：床の長い傷を横切る間仕切り。西室と東室の札が掛かっている。
+
+可動間仕切り、床の長い傷、境界の二位置を示します。室名はゲーム側で正確に表示します。
+
+### 13 配達箱前（post）
+
+予定配置先：assets/scenes/post.png
+
+区画：図書棟。情景：投入口と受取口。予約札の時刻だけが配達を動かしていた。
+
+投入口と受取口、予約札の差し込み部を分けて描きます。
+
+### 14 規約審査室（review）
+
+予定配置先：assets/scenes/review.png
+
+区画：図書棟。情景：切り取られた掲示のそばに、原本の綴じ穴が残る。
+
+切り取られた掲示と原本の綴じ穴を別の痕跡として描きます。
+
+### 15 装備点検室（equipment）
+
+予定配置先：assets/scenes/equipment.png
+
+区画：物品棟。情景：武器と防具で棚が分かれている。呼び方は重さを変えない。
+
+武器棚と防具棚を分け、籠手の空き枠を示します。
+
+### 16 音楽室前（music）
+
+予定配置先：assets/scenes/music.png
+
+区画：物品棟。情景：無人のピアノに紙の帯。演奏の痕跡と、奏者の在席は別々に残る。
+
+無人の自動演奏ピアノと紙帯を描き、奏者の在席を示す人物は置きません。
+
+### 17 物品庫（store）
+
+予定配置先：assets/scenes/store.png
+
+区画：物品棟。情景：封印用の紙片が散る。封をする前にも、この箱には過去がある。
+
+箱の山、封印紙片、開封済みの箱を区別します。
+
+### 18 物品庫前の救護所（aid）
+
+予定配置先：assets/scenes/aid.png
+
+区画：物品棟。情景：救護の器具と開封された荷物。助けに来た人の足跡も焼き付いている。
+
+救護器具、開封された荷物、足跡を描きます。
+
+### 19 乾いた点検廊下（service）
+
+予定配置先：assets/scenes/service.png
+
+区画：水辺。情景：水路と平行に伸びる乾いた通路。更衣室と温室側を結んでいる。
+
+水路に平行な乾いた点検通路と更衣室・温室への接続を示します。
+
+### 20 桟橋（dock）
+
+予定配置先：assets/scenes/dock.png
+
+区画：水辺。情景：跳ね橋が上がっている。橋がなかったのか、後からなくなったのか。
+
+上がった跳ね橋、操作輪、水面、対岸の位置を明確にします。
+
+### 21 水没試験室（flood）
+
+予定配置先：assets/scenes/flood.png
+
+区画：水辺。情景：今は乾いた床に、水面の線だけが残っている。
+
+現在は乾いた床、壁の水位痕、排水口、操作端末を描きます。
+
+### 22 天文展示室（observatory）
+
+予定配置先：assets/scenes/observatory.png
+
+区画：観測棟。情景：窓形の枠に夜の桟橋が浮かぶ。天井には天文展示の機材が吊られている。
+
+投影された夜の桟橋と窓形の枠、投影機、伝声管を区別します。実際の窓と誤読させません。
+
+### 23 時計塔（clock）
+
+予定配置先：assets/scenes/clock.png
+
+区画：観測棟。情景：点検口と塔の入口。破れた用紙が二つの現場をつなぐ。
+
+塔の入口、点検口、点検簿の紙片と鍵の位置を読み取りやすくします。
+
+### 24 地下貨物リフト（lift）
+
+予定配置先：assets/scenes/lift.png
+
+区画：体育棟。情景：かごの内側には屋上の光も地下の闇も残る。
+
+貨物かごの内側と、屋上側と一致する傷を示します。
+
+### 25 屋上リフト口（roof）
+
+予定配置先：assets/scenes/roof.png
+
+区画：体育棟。情景：地下と同じ擦り傷を持つ扉。かごは場所を変えていた。
+
+地下リフトと同じ扉の傷、呼出し装置、外周通路の入口を示します。
+
+### 26 外周点検通路（walkway）
+
+予定配置先：assets/scenes/walkway.png
+
+区画：体育棟。情景：手すりの向こうに落下の痕跡。傍らの投槍には別人の貸出票がある。
+
+正常な高所足場、手すり、落下の痕跡、投槍と貸出票を示します。
+
+### 27 避難所（shelter）
+
+予定配置先：assets/scenes/shelter.png
+
+区画：体育棟。情景：入口に計数器がある。反対の壁には、もう一つ扉がある。
+
+入口の計数器と反対側の別の扉を一画面で区別します。
+
+### 28 中央管理室（management）
+
+予定配置先：assets/scenes/management.png
+
+区画：管理棟。情景：二人が同時にいた痕跡と、一人が残された痕跡が重なっている。
+
+管理卓、資料、内扉を描きます。人物の残像は別レイヤーにします。
+
+### 29 非常階段（stairs）
+
+予定配置先：assets/scenes/stairs.png
+
+区画：管理棟。情景：戻れないと書かれた扉。鍵穴は両側にある。
+
+階段、両側に鍵穴を持つ扉を読み取れる構図にします。掲示の文言は別表示にします。
+
+### 30 中央機構室（mechanism）
+
+予定配置先：assets/scenes/mechanism.png
+
+区画：管理棟。情景：壁そのものが動く試験区画。停止位置の目盛りが刻まれている。
+
+可動隔壁、停止目盛り、操作部と閉鎖途中の痕跡を示します。
+
+### 31 非常通信室（comms）
+
+予定配置先：assets/scenes/comms.png
+
+区画：管理棟。情景：校外へ続く一本の回線。送信の完了印は、後の銃声でも消えない。
+
+校外への回線、送信装置、完了表示、下書きを区別します。
+
+### 32 最終報告室（terminal）
+
+予定配置先：assets/scenes/terminal.png
+
+区画：管理棟。情景：扉の前に一つ、室内に二つの輪郭。誰もいない端末に提出の痕跡がある。
+
+戸口と室内、予約提出端末と印字部を一画面に収めます。人型三つはゲーム側で重ねます。
+
+### 33 南門（south）
+
+予定配置先：assets/scenes/south.png
+
+区画：外周。情景：北門という表示。その後ろには南側だけに建つ貯水塔がある。
+
+貯水塔が門の背後に見える構図にします。北門という偽装表示は別レイヤーで正確に表します。
+
+## 専用音の追加22項目
+
+BGM・環境音・UI音の追加は必須ではありません。各素材は44.1kHzのWAV原本とOGG版を用意します。演出音で証言の真偽や隠された死亡時刻を知らせません。
+
+### 01 放送卓スイッチ（broadcast-switch）
+
+使用場面：studio / case-33。予定配置先：assets/audio/sfx/broadcast-switch.ogg
+
+手元の切替音だけの短い素材。既存broadcast-chimeはチャイムを含むためこの台詞へ流用しません。
+
+### 02 椅子と金属食器の転倒（chair-fall-tableware）
+
+使用場面：cafeteria / case-03。予定配置先：assets/audio/sfx/chair-fall-tableware.ogg
+
+椅子が倒れ、金属食器が転がる一連の音。
+
+### 03 重い辞典が返却口へ落ちる音（heavy-book-return）
+
+使用場面：library / case-23。予定配置先：assets/audio/sfx/heavy-book-return.ogg
+
+金属角のある厚い本の低い落下音。
+
+### 04 本が床へ落ちる音（book-drop）
+
+使用場面：library / case-26。予定配置先：assets/audio/sfx/book-drop.ogg
+
+通常の本の落下。重い辞典と区別します。
+
+### 05 衣装の擦れと杖の一打（cloth-cane）
+
+使用場面：wardrobe / case-34。予定配置先：assets/audio/sfx/cloth-cane.ogg
+
+布が擦れた後、杖先が一度だけ鳴ります。
+
+### 06 高所足場の金具（catwalk-metal）
+
+使用場面：gym / case-15。予定配置先：assets/audio/sfx/catwalk-metal.ogg
+
+軽い金具の鳴り。落下や破損を勝手に追加しません。
+
+### 07 配達箱の開扉と封筒（delivery-envelope）
+
+使用場面：post / case-04。予定配置先：assets/audio/sfx/delivery-envelope.ogg
+
+小さな開閉音と一枚の紙の落下。
+
+### 08 鏡板の軋みとカメラの滑り（mirror-camera）
+
+使用場面：theater / case-10。予定配置先：assets/audio/sfx/mirror-camera.ogg
+
+鏡の回転部の軋み、続く床上の滑り。
+
+### 09 台車停止と鋏を置く音（cart-stop-scissors）
+
+使用場面：rescue / case-25。予定配置先：assets/audio/sfx/cart-stop-scissors.ogg
+
+車輪が止まり、金属の鋏を置きます。
+
+### 10 投影機の回転・停止（projector-loop）
+
+使用場面：observatory / case-16・case-36。予定配置先：assets/audio/sfx/projector-loop.ogg
+
+定常ループと停止音を分けて用意します。
+
+### 11 衣装掛けの転倒（clothes-rack-fall）
+
+使用場面：wardrobe / case-20。予定配置先：assets/audio/sfx/clothes-rack-fall.ogg
+
+軽い金属製ラックの倒れる音。
+
+### 12 箱の崩落（crate-collapse）
+
+使用場面：store / case-39。予定配置先：assets/audio/sfx/crate-collapse.ogg
+
+複数の箱が崩れ、細い金属音が残ります。
+
+### 13 無人の自動演奏ピアノ（player-piano）
+
+使用場面：music / case-35。予定配置先：assets/audio/sfx/player-piano.ogg
+
+紙帯式の演奏。探索BGMとは別に、劇中の音源として作ります。
+
+### 14 案内板の切替（sign-flip）
+
+使用場面：south / case-27。予定配置先：assets/audio/sfx/sign-flip.ogg
+
+表示板の回転・停止だけの短い音。
+
+### 15 鍵束（keys-jingle）
+
+使用場面：stairs / case-05、clock / case-28。予定配置先：assets/audio/sfx/keys-jingle.ogg
+
+複数の鍵がぶつかる音。
+
+### 16 排水の終わり（drain-finish）
+
+使用場面：flood / case-09。予定配置先：assets/audio/sfx/drain-finish.ogg
+
+水量が減り、最後に排水音が止まります。
+
+### 17 医療器具の接触（medical-tools）
+
+使用場面：medical / case-13。予定配置先：assets/audio/sfx/medical-tools.ogg
+
+小さな金属器具の接触。
+
+### 18 警告ブザーの停止（warning-buzzer-stop）
+
+使用場面：mechanism / case-08。予定配置先：assets/audio/sfx/warning-buzzer-stop.ogg
+
+短い警告音と途切れる終端。
+
+### 19 送信機の起動（transmitter-start）
+
+使用場面：comms / case-32。予定配置先：assets/audio/sfx/transmitter-start.ogg
+
+通信機の起動音と窓留め具の小音。
+
+### 20 扉を叩く音（door-knock）
+
+使用場面：terminal / case-31。予定配置先：assets/audio/sfx/door-knock.ogg
+
+扉への数回のノック。
+
+### 21 予約端末の作動（terminal-scheduled）
+
+使用場面：terminal / case-07。予定配置先：assets/audio/sfx/terminal-scheduled.ogg
+
+人が操作していない端末の自動作動。
+
+### 22 報告書の印字（report-print）
+
+使用場面：terminal / case-24。予定配置先：assets/audio/sfx/report-print.ogg
+
+短い印字と紙送り。
+
+## 既存背景の追加カット候補
+
+温室：本文e23dの固定された床下待避庫と、その上から動いた育苗トレーを示す調査用の寄り。今回の背景は全景として使用します。
+
+体育館：本文e15dのレール上の巡回人形二体と車輪を示す調査用の寄り。人の足跡と人形の軌跡を混同させません。
+
+## 人物・音声素材（追加演出用、現行UIでは未使用）
+
+40人の名簿用肖像は未制作です。現在の名簿は氏名と活動を文字で表示しています。採用する場合は、同じ漫画線画で表情・顔立ち・髪形・識別小物を定めてから制作します。未確定の死因や犯人を示す情報は肖像へ追加しません。
+
+01　p01　朝倉 律　学級委員長　予定：assets/portraits/p01.png
+02　p02　一ノ瀬 澪　演劇部の声役　予定：assets/portraits/p02.png
+03　p03　宇佐美 翔　写真部　予定：assets/portraits/p03.png
+04　p04　榎本 凪　建築模型が得意　予定：assets/portraits/p04.png
+05　p05　大庭 蓮　水泳部　予定：assets/portraits/p05.png
+06　p06　柏木 紬　服飾係　予定：assets/portraits/p06.png
+07　p07　神崎 透　保健委員　予定：assets/portraits/p07.png
+08　p08　久世 遥　地理委員　予定：assets/portraits/p08.png
+09　p09　黒瀬 岳　ボクシング部　予定：assets/portraits/p09.png
+10　p10　小鳥遊 杏　合唱部の進行係　予定：assets/portraits/p10.png
+11　p11　篠原 慧　将棋部　予定：assets/portraits/p11.png
+12　p12　白石 環　救護班長　予定：assets/portraits/p12.png
+13　p13　瀬戸 湊　ボート部　予定：assets/portraits/p13.png
+14　p14　高槻 千景　新聞部　予定：assets/portraits/p14.png
+15　p15　橘 悠真　陸上部　予定：assets/portraits/p15.png
+16　p16　月島 栞　図書委員　予定：assets/portraits/p16.png
+17　p17　寺崎 誠　工作班　予定：assets/portraits/p17.png
+18　p18　戸塚 泉　調理係　予定：assets/portraits/p18.png
+19　p19　中原 朔　天文同好会　予定：assets/portraits/p19.png
+20　p20　七瀬 灯　ボランティア委員　予定：assets/portraits/p20.png
+21　p21　西園寺 梓　会計係　予定：assets/portraits/p21.png
+22　p22　野々村 航　放送委員　予定：assets/portraits/p22.png
+23　p23　橋本 蛍　園芸係　予定：assets/portraits/p23.png
+24　p24　花房 椿　理科部　予定：assets/portraits/p24.png
+25　p25　日向 颯　陸上部の跳躍選手　予定：assets/portraits/p25.png
+26　p26　深見 静　相談係　予定：assets/portraits/p26.png
+27　p27　藤堂 怜　討論部　予定：assets/portraits/p27.png
+28　p28　星野 真琴　舞台美術係　予定：assets/portraits/p28.png
+29　p29　真壁 隼　格闘技経験者　予定：assets/portraits/p29.png
+30　p30　水瀬 雫　水中競技の選手　予定：assets/portraits/p30.png
+31　p31　宮原 奏　ピアノ担当　予定：assets/portraits/p31.png
+32　p32　村瀬 理央　映像係　予定：assets/portraits/p32.png
+33　p33　望月 彗　天文同好会　予定：assets/portraits/p33.png
+34　p34　八代 千尋　郵便係　予定：assets/portraits/p34.png
+35　p35　矢野 圭　集計係　予定：assets/portraits/p35.png
+36　p36　結城 小夜　美術部　予定：assets/portraits/p36.png
+37　p37　吉岡 直　救護班　予定：assets/portraits/p37.png
+38　p38　若槻 薫　広報係　予定：assets/portraits/p38.png
+39　p39　綿貫 要　副委員長　予定：assets/portraits/p39.png
+40　p40　桐生 綾　記録係　予定：assets/portraits/p40.png
+
+全身立ち絵・会話差分・発見再現の人物カットは演出仕様が未確定のため枚数未定です。肖像40枚とは別の拡張候補です。
+
+点呼と発見再現の台詞の音声収録も未制作です。117件の証言レコード数と収録台詞数は同一ではないため、収録する場合はsrc/data/case-text.jsから話者付きの台詞一覧を作成します。全員死亡後の客観場面に新しい証人の声を足しません。
+
+地図・白い人型・通常UIはコード描画済みで、不足画像には数えません。
+
+配置履歴：[ASSET_PLACEMENT.md](ASSET_PLACEMENT.md)。配置先の対応はassets/asset-manifest.jsonを参照してください。

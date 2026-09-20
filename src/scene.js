@@ -1,6 +1,6 @@
 import Phaser from 'phaser';
 import { nodes, edges, markers } from './data/game.js';
-const images = import.meta.glob('../assets/scenes/*.svg', {
+const images = import.meta.glob('../assets/scenes/*.{png,svg}', {
   query: '?url',
   import: 'default',
   eager: true,
@@ -14,8 +14,12 @@ export class ArchiveScene extends Phaser.Scene {
     this.view = null;
   }
   preload() {
-    for (const n of nodes)
-      this.load.svg(n.id, images[`../assets/scenes/${n.id}.svg`], { width: 1280, height: 720 });
+    for (const n of nodes) {
+      const png = images[`../assets/scenes/${n.id}.png`];
+      if (png) this.load.image(n.id, png);
+      else
+        this.load.svg(n.id, images[`../assets/scenes/${n.id}.svg`], { width: 1280, height: 720 });
+    }
   }
   create() {
     this.layer = this.add.container();
@@ -28,7 +32,7 @@ export class ArchiveScene extends Phaser.Scene {
       this.drawMap(state);
       return;
     }
-    this.layer.add(this.add.image(640, 360, state.node));
+    this.layer.add(this.add.image(640, 360, state.node).setDisplaySize(1280, 720));
     const list = markers.filter((m) => m.node === state.node);
     list.forEach((m, i) => {
       const x = 1280 * (0.28 + i * 0.23),

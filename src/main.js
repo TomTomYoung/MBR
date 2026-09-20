@@ -4,10 +4,14 @@ import '@fontsource/noto-sans-jp/400.css';
 import './style.css';
 import { Investigation } from './engine.js';
 import { ArchiveScene } from './scene.js';
+import { ArchiveAudio } from './audio.js';
+import { audioAssets } from './audio-assets.js';
+import { replaySounds, outdoorNodes } from './data/media.js';
 import { nodes, people, weapons, causes, markers, intro, ending } from './data/game.js';
 
 const $ = (id) => document.getElementById(id);
 const engine = new Investigation();
+const audio = new ArchiveAudio(audioAssets);
 const SAVE_KEY = 'mbr-investigation-v1';
 const book = $('book'),
   replay = $('replay');
@@ -16,7 +20,6 @@ let scene,
   activeReplay = null,
   toastTimer,
   muted = true,
-  audioContext,
   restoreWarning = '';
 try {
   const saved = localStorage.getItem(SAVE_KEY);
@@ -51,27 +54,26 @@ function toast(text) {
   clearTimeout(toastTimer);
   toastTimer = setTimeout(() => $('toast').classList.remove('visible'), 4500);
 }
-function sound(type = 'tap') {
-  if (muted) return;
-  try {
-    audioContext ??= new (window.AudioContext || window.webkitAudioContext)();
-    audioContext.resume();
-    const o = audioContext.createOscillator(),
-      g = audioContext.createGain();
-    o.connect(g);
-    g.connect(audioContext.destination);
-    o.type = type === 'replay' ? 'triangle' : 'sine';
-    o.frequency.setValueAtTime(
-      type === 'confirm' ? 440 : type === 'replay' ? 110 : 210,
-      audioContext.currentTime,
-    );
-    g.gain.setValueAtTime(0.018, audioContext.currentTime);
-    g.gain.exponentialRampToValueAtTime(0.001, audioContext.currentTime + 0.2);
-    o.start();
-    o.stop(audioContext.currentTime + 0.22);
-  } catch {
-    /* Audio is optional. */
-  }
+function sound(type = 'ui-confirm') {
+  audio.play(type);
+}
+function syncAudio() {
+  const section = book.open ? $('book-title').textContent : '';
+  audio.setContext({
+    music: activeReplay
+      ? 'reconstruction'
+      : section === '最終出席簿'
+        ? 'final-attendance'
+        : ['証拠と証言', '死亡リポート'].includes(section)
+          ? 'deduction'
+          : 'investigation',
+    ambience:
+      activeReplay || section === '最終出席簿'
+        ? null
+        : outdoorNodes.has(engine.state.node)
+          ? 'island-wind'
+          : 'empty-school',
+  });
 }
 function run(fn) {
   try {
@@ -121,12 +123,13 @@ function render(message) {
   }
   scene?.show(s, mode);
   renderCommands();
+  syncAudio();
 }
 function travel(id, jump = false) {
   run(() => {
     engine.travel(id, { jump });
     mode = 'explore';
-    sound();
+    sound('footsteps');
     save();
     render();
   });
@@ -198,7 +201,7 @@ function renderCommands() {
         () =>
           run(() => {
             const result = engine.collect(r.id);
-            sound();
+            sound(got ? 'ui-confirm' : 'evidence-record');
             save();
             render(r.text + unlockedMessage(result.unlocked));
             if (result.unlocked.length) toast(`${result.unlocked.length} 地点の輪郭が現れた。`);
@@ -230,14 +233,18 @@ function startReplay(id) {
   $('replay-context').textContent = c.discoveryAt
     ? `発見が周知された場面 ／ 発言時刻 ${c.discoveryAt}`
     : '人の声が途絶えた現場 ／ 客観的な再現';
+  audio.stopEffects();
+  sound('replay-enter');
+  syncAudio();
   showReplayLine();
   if (!replay.open) replay.showModal();
   $('next-line').focus();
-  sound('replay');
 }
 function showReplayLine() {
   const c = engine.cases.get(activeReplay.id),
     l = c.lines[activeReplay.line];
+  const cue = replaySounds[`${c.id}:${activeReplay.line}`];
+  if (!l.speaker && cue) sound(cue);
   $('replay-speaker').textContent = l.speaker ? name(l.speaker) : '現場の音と痕跡';
   $('replay-text').textContent = l.text;
   $('replay-page').textContent = `${activeReplay.line + 1} / ${c.lines.length}`;
@@ -250,11 +257,13 @@ $('next-line').addEventListener('click', () =>
     const c = engine.cases.get(activeReplay.id);
     if (activeReplay.line < c.lines.length - 1) {
       activeReplay.line++;
+      audio.stopEffects();
       showReplayLine();
-      sound('replay');
       return;
     }
     const result = engine.finishReplay(c.id);
+    audio.stopEffects();
+    sound(result.added.length ? 'testimony-record' : 'replay-exit');
     activeReplay = null;
     replay.close();
     save();
@@ -269,19 +278,33 @@ $('next-line').addEventListener('click', () =>
 );
 $('stop-replay').addEventListener('click', () => {
   activeReplay = null;
+  audio.stopEffects();
+  sound('replay-exit');
   replay.close();
+  syncAudio();
 });
 replay.addEventListener('cancel', () => {
   activeReplay = null;
+  audio.stopEffects();
+  sound('replay-exit');
+  syncAudio();
 });
 function openBook(title, kicker = 'INVESTIGATION ARCHIVE') {
   $('book-title').textContent = title;
   $('book-kicker').textContent = kicker;
   $('book-content').replaceChildren();
-  if (!book.open) book.showModal();
+  if (!book.open) {
+    book.showModal();
+    sound('notebook-open');
+  }
+  syncAudio();
   return $('book-content');
 }
 $('close-book').addEventListener('click', () => book.close());
+book.addEventListener('close', () => {
+  sound('ui-back');
+  syncAudio();
+});
 function selectField(text, values, value, onChange) {
   const l = el('label', text);
   const select = el('select');
@@ -291,7 +314,10 @@ function selectField(text, values, value, onChange) {
     select.append(o);
   }
   select.value = value || '';
-  select.addEventListener('change', () => onChange(select.value));
+  select.addEventListener('change', () => {
+    sound('ui-confirm');
+    onChange(select.value);
+  });
   l.append(select);
   return l;
 }
@@ -470,7 +496,7 @@ function checkReports(onlyId = '', automatic = false) {
   const result = engine.checkReports();
   save();
   if (result.confirmed.length) {
-    sound('confirm');
+    sound(result.complete ? 'all-confirmed' : 'report-confirm');
     render(`${result.confirmed.length} 件のリポートが確定した。`);
     showReports(onlyId);
     $('report-result').textContent = `${result.confirmed.length} 件が確定した。`;
@@ -641,10 +667,12 @@ const observer = new MutationObserver(() => {
 observer.observe($('book-title'), { childList: true });
 $('explore-tab').addEventListener('click', () => {
   mode = 'explore';
+  sound();
   render();
 });
 $('map-tab').addEventListener('click', () => {
   mode = 'map';
+  sound();
   render();
 });
 $('journal-tab').addEventListener('click', () => showJournal());
@@ -653,6 +681,7 @@ $('people-tab').addEventListener('click', showPeople);
 $('settings-tab').addEventListener('click', showSettings);
 $('sound-toggle').addEventListener('click', () => {
   muted = !muted;
+  audio.setEnabled(!muted);
   $('sound-toggle').textContent = `音：${muted ? '切' : '入'}`;
   $('sound-toggle').setAttribute('aria-pressed', !muted);
   sound();
@@ -696,6 +725,12 @@ boot().catch((error) => {
     '景色の読込みに失敗しました。ページを再読込みしてください。';
   console.error(error);
 });
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Tab') sound('ui-cursor');
+});
+document.addEventListener('visibilitychange', () => audio.setSuspended(document.hidden));
+window.addEventListener('pageshow', () => audio.setSuspended(document.hidden));
 window.addEventListener('pagehide', () => {
+  audio.setSuspended(true);
   if (engine.state.started) save();
 });
