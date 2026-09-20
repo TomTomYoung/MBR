@@ -4,7 +4,7 @@
 
 src/engine.jsのInvestigationが進行の正本です。DOMやPhaserへ依存しないので、到達可能性・解答確定・保存読込みを単独で検査できます。解放地点、訪問済み地点、発見済み事件、調査済み人型、再現完了、取得済み資料、仮説、確定リポートを別々に保存します。
 
-src/scene.jsのArchiveSceneはPhaserの単一Sceneです。地理上のノードごとにPhaser Sceneを作りません。41枚のSVGを読み込み、現在地の一枚絵と人型を表示します。地図モードでは空間グラフを描き、解放済み地点を選べます。キャンバスの操作に対応するDOMボタンも用意しています。
+src/scene.jsのArchiveSceneはPhaserの単一Sceneです。地理上のノードごとにPhaser Sceneを作りません。8地点は漫画調PNG、残る33地点は既存SVGを読み込み、現在地の一枚絵と人型を表示します。PNGとSVGを基準1280×720の表示領域へ収めます。地図モードでは空間グラフを描き、解放済み地点を選べます。キャンバスの操作に対応するDOMボタンも用意しています。
 
 src/main.jsがコマンド、再現ダイアログ、証拠・証言一覧、名簿、リポート、メモ、保存を扱います。ユーザー入力のメモはtextContentまたはtextarea.valueで扱い、HTMLとして挿入しません。
 
@@ -33,3 +33,7 @@ localStorageのmbr-investigation-v1に保存します。schema versionは1。フ
 ## 静的配布
 
 ViteはJavaScript依存と画像をまとめるために使用します。アプリ自体はサーバーの状態を持ちません。Phaserはnpm依存として同梱し、実行時に外部CDNやフォント配信へ依存しません。ビルドは相対パスで出力します。
+
+## 画像と音
+
+assets/asset-manifest.jsonが制作時番号・受領ファイル名と配置先の対応です。src/audio-assets.jsがOGGのURLを解決し、src/audio.jsがBGM・環境音・効果音を管理します。再現の音はsrc/data/media.jsの場面・行番号に明示的に対応し、証言からの単語検索で音を付けません。音の初期値はOFFです。音OFF、タブ非表示、pagehideで再生を止めます。WAV原本と制作資料はランタイムのバンドル対象外です。

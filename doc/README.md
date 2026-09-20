@@ -9,3 +9,5 @@ scenario/ORIGINAL_40.md と original-40.json は会話で作成した40人の原
 仕様の優先順位は、最新のユーザー指定、design/SPEC.md、現在の src/data、旧原案です。Notionの原本は変更しません。
 
 本文の修正は src/data の正本へ反映し、npm run docs で実装本文の資料を再生成します。生成資料だけを書き換えないでください。
+
+素材の現状は[配置記録](../inbox/ASSET_PLACEMENT.md)と[不足素材一覧](../inbox/MISSING_ASSETS.md)を参照してください。
