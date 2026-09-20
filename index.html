@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111111" />
+    <meta
+      name="description"
+      content="白黒の学園に焼き付いた事実を歩き、四十人の最期を解くコマンド選択型ミステリー。"
+    />
+    <title>白鐘学園・最終出席簿 | MBR</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="masthead">
+        <div class="brand">
+          <span class="seal" aria-hidden="true">白</span>
+          <div>
+            <span class="eyebrow">MBR / A RECORD OF FORTY LIVES</span>
+            <h1>白鐘学園<span>最終出席簿</span></h1>
+          </div>
+        </div>
+        <div class="progress-block">
+          <span class="eyebrow">確定した記録</span>
+          <p><span id="confirmed-count">00</span><span class="muted"> / 40</span></p>
+          <div class="progress-track"><span id="progress-fill"></span></div>
+        </div>
+      </header>
+      <nav class="nav" aria-label="調査メニュー">
+        <button id="explore-tab" class="selected" aria-pressed="true">探索</button>
+        <button id="map-tab" aria-pressed="false">地図</button>
+        <button id="journal-tab">証拠・証言 <span id="record-count">0</span></button>
+        <button id="reports-tab">リポート</button>
+        <button id="people-tab">生徒名簿</button>
+        <button id="settings-tab" class="nav-end">手引き・保存</button>
+      </nav>
+      <main>
+        <div class="location-bar">
+          <div>
+            <span id="area-label" class="eyebrow">入口</span>
+            <h2 id="location-name">正門</h2>
+          </div>
+          <span id="location-meta">残された事実を調べる</span>
+        </div>
+        <div class="investigation-layout">
+          <section class="scene-panel" aria-label="地点の情景">
+            <div
+              id="stage"
+              role="img"
+              aria-label="正門の白黒の情景。調査は右のコマンドからも行えます。"
+            >
+              <p class="loading">残された景色を読み込んでいます…</p>
+            </div>
+            <div class="scene-caption">
+              <span class="eyebrow" id="scene-label">SCENE / 01</span
+              ><span id="scene-hint">白い人型を調べ、発見の瞬間を再現する。</span>
+            </div>
+            <div class="message-box" aria-live="polite" aria-atomic="true">
+              <span class="eyebrow">調査記録</span>
+              <p id="message">校門の前に、一通の調査依頼が残っている。</p>
+            </div>
+          </section>
+          <aside class="commands-panel">
+            <div class="panel-heading">
+              <h3 id="command-title">調査する</h3>
+              <span id="command-count" class="eyebrow"></span>
+            </div>
+            <div id="commands"></div>
+          </aside>
+        </div>
+      </main>
+      <footer>
+        <span id="save-status">調査は自動で保存されます</span><span>事実は残る。言葉は揺れる。</span
+        ><button id="sound-toggle" aria-pressed="false">音：切</button>
+      </footer>
+    </div>
+    <dialog id="book" aria-labelledby="book-title">
+      <div class="book-head">
+        <div>
+          <span class="eyebrow" id="book-kicker">INVESTIGATION ARCHIVE</span>
+          <h2 id="book-title">調査手帳</h2>
+        </div>
+        <button id="close-book" aria-label="手帳を閉じる">閉じる ×</button>
+      </div>
+      <div id="book-content"></div>
+    </dialog>
+    <dialog id="replay" aria-labelledby="replay-title">
+      <div class="replay-top">
+        <span class="eyebrow">RECONSTRUCTION</span
+        ><button id="stop-replay" aria-label="再現を中断する">中断 ×</button>
+      </div>
+      <h2 id="replay-title"></h2>
+      <p id="replay-context"></p>
+      <div class="replay-line">
+        <p id="replay-speaker"></p>
+        <p id="replay-text"></p>
+      </div>
+      <div class="replay-bottom">
+        <span id="replay-page" class="eyebrow"></span
+        ><button id="next-line" class="primary">次へ →</button>
+      </div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <noscript>このゲームを遊ぶにはJavaScriptを有効にしてください。</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

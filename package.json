@@ -1,0 +1,28 @@
+{
+  "name": "mbr-final-attendance",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build --base=./",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js",
+    "test:browser": "playwright test",
+    "docs": "node scripts/build-docs.js",
+    "format": "prettier --write index.html src scripts tests playwright.config.js"
+  },
+  "dependencies": {
+    "@fontsource/noto-sans-jp": "5.3.0",
+    "@fontsource/noto-serif-jp": "5.3.0",
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "prettier": "3.6.2",
+    "vite": "6.4.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
