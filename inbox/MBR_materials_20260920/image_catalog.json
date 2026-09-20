@@ -1,0 +1,58 @@
+[
+  {
+    "name": "正門",
+    "node": "gate",
+    "generated_filename": "exec-f6639d68-e7f6-45a5-9861-e826e7f9ed8a.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  },
+  {
+    "name": "中央広場",
+    "node": "courtyard",
+    "generated_filename": "exec-e8e2df2e-ff98-4697-9488-1b4d5ad3d670.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  },
+  {
+    "name": "保健室",
+    "node": "infirmary",
+    "generated_filename": "exec-ba915fdb-ea92-4194-9556-cdcb909661d9.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  },
+  {
+    "name": "校内スタジオ",
+    "node": "studio",
+    "generated_filename": "exec-91402d48-67cd-4c10-b24f-4ae429b2d0f1.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  },
+  {
+    "name": "温室・水路縁",
+    "node": "greenhouse",
+    "generated_filename": "exec-fcf4ad8d-e40f-4068-b960-37c269c347a9.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  },
+  {
+    "name": "図書室",
+    "node": "library",
+    "generated_filename": "exec-ded5982d-577c-4a52-b4fa-415183579c17.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  },
+  {
+    "name": "食堂",
+    "node": "cafeteria",
+    "generated_filename": "exec-21022270-02d7-4f40-b4b7-51c7342b0873.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  },
+  {
+    "name": "体育館",
+    "node": "gym",
+    "generated_filename": "exec-dbb9d3be-bd70-4f4f-b5c7-da4a2bf1fce6.png",
+    "style": "漫画線画・デスゲーム現場報告書",
+    "status": "生成済み／未アップロード・未リネーム・未配置"
+  }
+]
