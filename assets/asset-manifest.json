@@ -482,6 +482,794 @@
       "wav": "assets/audio/masters/sfx/mechanism-stop.wav",
       "ogg": "assets/audio/sfx/mechanism-stop.ogg",
       "key": "mechanism-stop"
+    },
+    {
+      "number": "025",
+      "key": "broadcast-switch",
+      "title": "放送卓スイッチ",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 0.55,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-33"
+      ],
+      "description": "放送卓の小さな切替スイッチ一回。",
+      "wav": "assets/audio/masters/sfx/broadcast-switch.wav",
+      "ogg": "assets/audio/sfx/broadcast-switch.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -37.53513140850958,
+      "boundary_delta": 2.362564265993413e-38,
+      "production_number": 1,
+      "kind": "効果音",
+      "notes": "放送卓の小さな切替スイッチ一回。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-33:0"
+      ],
+      "sha256": {
+        "ogg": "2e3d48b00f6c04972e926b7afa168138ab4b1b6b9f41659d13ce7623ac01a65e",
+        "wav": "6f336f18a54b86ff38b11fd4a4be90bbd966d7025e8d9dc4eb4c98fad5b56c9b"
+      },
+      "source_ogg": "inbox/audio_ogg/broadcast-switch.ogg",
+      "source_wav": "inbox/audio_wav/broadcast-switch.wav"
+    },
+    {
+      "number": "026",
+      "key": "chair-fall-tableware",
+      "title": "椅子と金属食器の転倒",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 3.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-03"
+      ],
+      "description": "椅子の転倒に続き、金属食器が小さく跳ねて転がる。",
+      "wav": "assets/audio/masters/sfx/chair-fall-tableware.wav",
+      "ogg": "assets/audio/sfx/chair-fall-tableware.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -31.76376826734134,
+      "boundary_delta": 4.5128811278707435e-37,
+      "production_number": 2,
+      "kind": "効果音",
+      "notes": "椅子の転倒に続き、金属食器が小さく跳ねて転がる。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-03:0"
+      ],
+      "sha256": {
+        "ogg": "f3d33c5fa7467cbd9d49e974ec2c5a802d47f0662de552a73e196a5cb91ec296",
+        "wav": "58a5c6c383b9eb53132fc819cd07e03c0389db1e06d9e86e6215576f214fba4e"
+      },
+      "source_ogg": "inbox/audio_ogg/chair-fall-tableware.ogg",
+      "source_wav": "inbox/audio_wav/chair-fall-tableware.wav"
+    },
+    {
+      "number": "027",
+      "key": "heavy-book-return",
+      "title": "重い辞典の返却口への落下",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.6,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-23"
+      ],
+      "description": "厚い辞典の重い衝突と、金属角の小さな接触。",
+      "wav": "assets/audio/masters/sfx/heavy-book-return.wav",
+      "ogg": "assets/audio/sfx/heavy-book-return.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -32.000945282962746,
+      "boundary_delta": 1.546230269135411e-36,
+      "production_number": 3,
+      "kind": "効果音",
+      "notes": "厚い辞典の重い衝突と、金属角の小さな接触。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-23:0"
+      ],
+      "sha256": {
+        "ogg": "5552153ece31dd7ab150fb840fe43fe05eaf39fa73f3703c70726ef043110058",
+        "wav": "90fc80f8b1d4a14c2f46ddb84ec2fa58507bebb6703e316cab450b1f3f259a72"
+      },
+      "source_ogg": "inbox/audio_ogg/heavy-book-return.ogg",
+      "source_wav": "inbox/audio_wav/heavy-book-return.wav"
+    },
+    {
+      "number": "028",
+      "key": "book-drop",
+      "title": "本が床へ落ちる音",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.25,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-26"
+      ],
+      "description": "通常の本が床へ落ち、紙が短く擦れる。",
+      "wav": "assets/audio/masters/sfx/book-drop.wav",
+      "ogg": "assets/audio/sfx/book-drop.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -31.58621326903926,
+      "boundary_delta": 5.282022856951318e-37,
+      "production_number": 4,
+      "kind": "効果音",
+      "notes": "通常の本が床へ落ち、紙が短く擦れる。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-26:0"
+      ],
+      "sha256": {
+        "ogg": "10d912f0e22bdc45d33aa79c3751f67ca10d070f03ff0575454e157ff4bb4af8",
+        "wav": "bca30f12f3ebf86e496bd690403424496dbaaedd9774a5bb3c0785d68a927c25"
+      },
+      "source_ogg": "inbox/audio_ogg/book-drop.ogg",
+      "source_wav": "inbox/audio_wav/book-drop.wav"
+    },
+    {
+      "number": "029",
+      "key": "cloth-cane",
+      "title": "衣装の擦れと杖の一打",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.9,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-34"
+      ],
+      "description": "布が擦れた後、杖先が一度だけ床を打つ。",
+      "wav": "assets/audio/masters/sfx/cloth-cane.wav",
+      "ogg": "assets/audio/sfx/cloth-cane.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -31.308751823245586,
+      "boundary_delta": 1.7561026778880953e-38,
+      "production_number": 5,
+      "kind": "効果音",
+      "notes": "布が擦れた後、杖先が一度だけ床を打つ。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-34:0"
+      ],
+      "sha256": {
+        "ogg": "b58763d726d380183bcb6b10a9fd06f5af10b3fd14d4b3097755cf50ec5d0f77",
+        "wav": "33d46c3bd55825941100f7716a3438c11c93da1f7c2120ca101b1375eef000ae"
+      },
+      "source_ogg": "inbox/audio_ogg/cloth-cane.ogg",
+      "source_wav": "inbox/audio_wav/cloth-cane.wav"
+    },
+    {
+      "number": "030",
+      "key": "catwalk-metal",
+      "title": "高所足場の金具",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.25,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-15"
+      ],
+      "description": "足場金具の軽い鳴り。",
+      "wav": "assets/audio/masters/sfx/catwalk-metal.wav",
+      "ogg": "assets/audio/sfx/catwalk-metal.ogg",
+      "peak_dbfs": -13.999999999956467,
+      "rms_dbfs": -30.878681410489538,
+      "boundary_delta": 1.668044651036781e-38,
+      "production_number": 6,
+      "kind": "効果音",
+      "notes": "足場金具の軽い鳴り。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-15:0"
+      ],
+      "sha256": {
+        "ogg": "7ad437283d1d7b11bb81a6920548ff1955bbdd7efde7c0f33b486d0eef6fb7d5",
+        "wav": "5eaaa854cace1f427c025a448193018b93020a593d8cff270a0e5674cd52660d"
+      },
+      "source_ogg": "inbox/audio_ogg/catwalk-metal.ogg",
+      "source_wav": "inbox/audio_wav/catwalk-metal.wav"
+    },
+    {
+      "number": "031",
+      "key": "delivery-envelope",
+      "title": "配達箱の開扉と封筒",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.9,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-04"
+      ],
+      "description": "小さな配達箱の扉が開き、一枚の封筒が落ちる。",
+      "wav": "assets/audio/masters/sfx/delivery-envelope.wav",
+      "ogg": "assets/audio/sfx/delivery-envelope.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -32.924089285780006,
+      "boundary_delta": 5.0393108194202e-38,
+      "production_number": 7,
+      "kind": "効果音",
+      "notes": "小さな配達箱の扉が開き、一枚の封筒が落ちる。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-04:0"
+      ],
+      "sha256": {
+        "ogg": "83ba7f00b34cd3acdcbd71c7d79145f00a47cd46f1832b5695905927109eaef1",
+        "wav": "a1a6c9b8482971a2341aa5f54ca92d16a34623682b6a5367df1cc118a259ab62"
+      },
+      "source_ogg": "inbox/audio_ogg/delivery-envelope.ogg",
+      "source_wav": "inbox/audio_wav/delivery-envelope.wav"
+    },
+    {
+      "number": "032",
+      "key": "mirror-camera",
+      "title": "鏡板の軋みとカメラの滑り",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 3.1,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-10"
+      ],
+      "description": "鏡板の回転部が軋み、カメラが床を滑る。",
+      "wav": "assets/audio/masters/sfx/mirror-camera.wav",
+      "ogg": "assets/audio/sfx/mirror-camera.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -29.27292897864755,
+      "boundary_delta": 3.609605383960581e-37,
+      "production_number": 8,
+      "kind": "効果音",
+      "notes": "鏡板の回転部が軋み、カメラが床を滑る。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-10:0"
+      ],
+      "sha256": {
+        "ogg": "c49d2d67dd5b2a1397b2309ff6a2d96c053d871d21335f3c81626adffbc945a1",
+        "wav": "1a9b4541b777d6cb717d9dc8a0c01ab0e86917b132cd87079e0054899b9c06b0"
+      },
+      "source_ogg": "inbox/audio_ogg/mirror-camera.ogg",
+      "source_wav": "inbox/audio_wav/mirror-camera.wav"
+    },
+    {
+      "number": "033",
+      "key": "cart-stop-scissors",
+      "title": "台車停止と鋏を置く音",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 2.3,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-25"
+      ],
+      "description": "台車の車輪が止まり、鋏が器具面に置かれる。",
+      "wav": "assets/audio/masters/sfx/cart-stop-scissors.wav",
+      "ogg": "assets/audio/sfx/cart-stop-scissors.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -29.94433951021865,
+      "boundary_delta": 1.939105212303467e-37,
+      "production_number": 9,
+      "kind": "効果音",
+      "notes": "台車の車輪が止まり、鋏が器具面に置かれる。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-25:0"
+      ],
+      "sha256": {
+        "ogg": "eb4c5c46ed497ce0b37cb24aeae9eff7687684649240949571e5771489c2d904",
+        "wav": "5c2fb2d3464c8b66db6787c06a2b8e8b27b56aa6695ee613622f5be31de85fb6"
+      },
+      "source_ogg": "inbox/audio_ogg/cart-stop-scissors.ogg",
+      "source_wav": "inbox/audio_wav/cart-stop-scissors.wav"
+    },
+    {
+      "number": "034",
+      "key": "projector-loop",
+      "title": "投影機の定常回転",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 8.0,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": true,
+      "cases": [
+        "case-16",
+        "case-36"
+      ],
+      "description": "8秒ループの投影機モーターと送り機構。停止はprojector-stopへ切り替える。",
+      "wav": "assets/audio/masters/sfx/projector-loop.wav",
+      "ogg": "assets/audio/sfx/projector-loop.ogg",
+      "peak_dbfs": -20.999999999902542,
+      "rms_dbfs": -25.641726624873833,
+      "boundary_delta": 0.0027249690915857766,
+      "loop_start_sample": 0,
+      "loop_end_sample": 352800,
+      "production_number": 10,
+      "kind": "効果音",
+      "notes": "8秒ループの投影機モーターと送り機構。停止はprojector-stopへ切り替える。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-16:0"
+      ],
+      "sha256": {
+        "ogg": "93fe39f8111bc2472243498c3860ca6d33ea47ffe1c678f35192c9c253f9cedd",
+        "wav": "c2ad8cb076fb0991d059edbb86f1deb4e009355a08e2c4a45d10921e0f58dc26"
+      },
+      "source_ogg": "inbox/audio_ogg/projector-loop.ogg",
+      "source_wav": "inbox/audio_wav/projector-loop.wav"
+    },
+    {
+      "number": "035",
+      "key": "projector-stop",
+      "title": "投影機の回転停止",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 2.7,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-16",
+        "case-36"
+      ],
+      "description": "回転速度が落ちて停止する投影機。ループ版と対で使用。",
+      "wav": "assets/audio/masters/sfx/projector-stop.wav",
+      "ogg": "assets/audio/sfx/projector-stop.ogg",
+      "peak_dbfs": -16.999999999938506,
+      "rms_dbfs": -24.09400365361816,
+      "boundary_delta": 1.4589297401197342e-38,
+      "production_number": 10,
+      "kind": "効果音",
+      "notes": "回転速度が落ちて停止する投影機。ループ版と対で使用。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-36:0"
+      ],
+      "sha256": {
+        "ogg": "0abda8de9ea6721c062a3acfdc69501e7ab326a94fb714115900c1f1a24f652a",
+        "wav": "efc58267e3787e67df4b4c29acbeabbc52972387f1f6b0e47128e2a26f423342"
+      },
+      "source_ogg": "inbox/audio_ogg/projector-stop.ogg",
+      "source_wav": "inbox/audio_wav/projector-stop.wav"
+    },
+    {
+      "number": "036",
+      "key": "clothes-rack-fall",
+      "title": "衣装掛けの転倒",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 2.6,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-20"
+      ],
+      "description": "軽い金属製衣装掛けが倒れ、横棒が小さく鳴る。",
+      "wav": "assets/audio/masters/sfx/clothes-rack-fall.wav",
+      "ogg": "assets/audio/sfx/clothes-rack-fall.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -28.04051100631095,
+      "boundary_delta": 4.522828984245908e-38,
+      "production_number": 11,
+      "kind": "効果音",
+      "notes": "軽い金属製衣装掛けが倒れ、横棒が小さく鳴る。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-20:0"
+      ],
+      "sha256": {
+        "ogg": "817510d6d15bef970148c5b5d7fc6c8a70ab310517af0fe48fe65d3a0dd65d8c",
+        "wav": "19b8eb50432524f537dc5cb915fcb67d5e152bb7c4739208f1e35ffd486ea69c"
+      },
+      "source_ogg": "inbox/audio_ogg/clothes-rack-fall.ogg",
+      "source_wav": "inbox/audio_wav/clothes-rack-fall.wav"
+    },
+    {
+      "number": "037",
+      "key": "crate-collapse",
+      "title": "箱の崩落",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 3.5,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-39"
+      ],
+      "description": "複数の箱が崩れ、終わりに細い金属音が残る。",
+      "wav": "assets/audio/masters/sfx/crate-collapse.wav",
+      "ogg": "assets/audio/sfx/crate-collapse.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -31.817111978037524,
+      "boundary_delta": 1.2205726798142158e-36,
+      "production_number": 12,
+      "kind": "効果音",
+      "notes": "複数の箱が崩れ、終わりに細い金属音が残る。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-39:0"
+      ],
+      "sha256": {
+        "ogg": "9d455b156b31cd9b956bdfcf88677826bc4490aeb1a55bcb2c1ca2f927e2a61e",
+        "wav": "b488351384176aac72c9777bdffa06665b1b12027d8734cba52e329ac3224989"
+      },
+      "source_ogg": "inbox/audio_ogg/crate-collapse.ogg",
+      "source_wav": "inbox/audio_wav/crate-collapse.wav"
+    },
+    {
+      "number": "038",
+      "key": "player-piano",
+      "title": "無人の自動演奏ピアノ",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 10.2,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-35"
+      ],
+      "description": "紙帯式自動演奏の短いオリジナル旋律と送り機構。劇中音源として再生。",
+      "wav": "assets/audio/masters/sfx/player-piano.wav",
+      "ogg": "assets/audio/sfx/player-piano.ogg",
+      "peak_dbfs": -14.999999999951154,
+      "rms_dbfs": -26.671539522783227,
+      "boundary_delta": 3.0544269715006185e-38,
+      "production_number": 13,
+      "kind": "効果音",
+      "notes": "紙帯式自動演奏の短いオリジナル旋律と送り機構。劇中音源として再生。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-35:0"
+      ],
+      "sha256": {
+        "ogg": "179aec7938b91a4fce6589b0853bec083ab13f8694c0461a2ff90e21d04308ee",
+        "wav": "65dac8c35aa9bac86f267f32525eb56a6d0ee97591d693526083a76b769b7dae"
+      },
+      "source_ogg": "inbox/audio_ogg/player-piano.ogg",
+      "source_wav": "inbox/audio_wav/player-piano.wav"
+    },
+    {
+      "number": "039",
+      "key": "sign-flip",
+      "title": "案内板の切替",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.35,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-27"
+      ],
+      "description": "表示板が回転して止まる一回の切替。",
+      "wav": "assets/audio/masters/sfx/sign-flip.wav",
+      "ogg": "assets/audio/sfx/sign-flip.ogg",
+      "peak_dbfs": -9.999999999972534,
+      "rms_dbfs": -33.37132578936822,
+      "boundary_delta": 2.7467617704879972e-37,
+      "production_number": 14,
+      "kind": "効果音",
+      "notes": "表示板が回転して止まる一回の切替。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-27:0"
+      ],
+      "sha256": {
+        "ogg": "af81147f72b20af2d2c59f35ab7f226a51a5e39990415b654b70512a73617175",
+        "wav": "b68f1669eaac822a125e20bf7abb00a6275ece93d7308b1f7bf35e6bdb61c18b"
+      },
+      "source_ogg": "inbox/audio_ogg/sign-flip.ogg",
+      "source_wav": "inbox/audio_wav/sign-flip.wav"
+    },
+    {
+      "number": "040",
+      "key": "keys-jingle",
+      "title": "鍵束",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.55,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-05",
+        "case-28"
+      ],
+      "description": "複数の小さな鍵が触れ合う一度の揺れ。",
+      "wav": "assets/audio/masters/sfx/keys-jingle.wav",
+      "ogg": "assets/audio/sfx/keys-jingle.ogg",
+      "peak_dbfs": -12.999999999961203,
+      "rms_dbfs": -30.593172193235944,
+      "boundary_delta": 3.339560932616343e-39,
+      "production_number": 15,
+      "kind": "効果音",
+      "notes": "複数の小さな鍵が触れ合う一度の揺れ。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-05:0",
+        "case-28:0"
+      ],
+      "sha256": {
+        "ogg": "3262f5bcf41eff4071fe41dcb3bb7e7b9bc909029c0809387854b724693a1e14",
+        "wav": "7be910ad6e374b6dc090bf19d623c30c7a948fb0b8b80c52211757c3bb134410"
+      },
+      "source_ogg": "inbox/audio_ogg/keys-jingle.ogg",
+      "source_wav": "inbox/audio_wav/keys-jingle.wav"
+    },
+    {
+      "number": "041",
+      "key": "drain-finish",
+      "title": "排水の終わり",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 4.8,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-09"
+      ],
+      "description": "水量が減り、気泡を含む排水音が静まって停止する。",
+      "wav": "assets/audio/masters/sfx/drain-finish.wav",
+      "ogg": "assets/audio/sfx/drain-finish.ogg",
+      "peak_dbfs": -12.999999999961203,
+      "rms_dbfs": -31.381859612254047,
+      "boundary_delta": 6.45393185279032e-38,
+      "production_number": 16,
+      "kind": "効果音",
+      "notes": "水量が減り、気泡を含む排水音が静まって停止する。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-09:0"
+      ],
+      "sha256": {
+        "ogg": "9c799c347b199e708eaed75cabe9da524059e84355f1f0ee4c493f6df9925d79",
+        "wav": "e754de10dd57b7005602d85d307f693501bcf6e6441fdc3a092017fc54130dc6"
+      },
+      "source_ogg": "inbox/audio_ogg/drain-finish.ogg",
+      "source_wav": "inbox/audio_wav/drain-finish.wav"
+    },
+    {
+      "number": "042",
+      "key": "medical-tools",
+      "title": "医療器具の接触",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.25,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-13"
+      ],
+      "description": "小さな医療器具同士の短い接触。",
+      "wav": "assets/audio/masters/sfx/medical-tools.wav",
+      "ogg": "assets/audio/sfx/medical-tools.ogg",
+      "peak_dbfs": -14.999999999951154,
+      "rms_dbfs": -32.80310373092155,
+      "boundary_delta": 1.9318276179239024e-39,
+      "production_number": 17,
+      "kind": "効果音",
+      "notes": "小さな医療器具同士の短い接触。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-13:0"
+      ],
+      "sha256": {
+        "ogg": "2f388f00094557e09ac978ffb03f60d7131ae1df2960127cd1a7ffe0ff6b9b56",
+        "wav": "689179860aa68791a8606a0ba460bc162eff0ae8648da6384c46eb8c0012a597"
+      },
+      "source_ogg": "inbox/audio_ogg/medical-tools.ogg",
+      "source_wav": "inbox/audio_wav/medical-tools.wav"
+    },
+    {
+      "number": "043",
+      "key": "warning-buzzer-stop",
+      "title": "警告ブザーの停止",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.1,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-08"
+      ],
+      "description": "短い警告ブザーが明確に途切れて停止する。",
+      "wav": "assets/audio/masters/sfx/warning-buzzer-stop.wav",
+      "ogg": "assets/audio/sfx/warning-buzzer-stop.ogg",
+      "peak_dbfs": -16.999999999938506,
+      "rms_dbfs": -22.722476019790925,
+      "boundary_delta": 3.6417912185714798e-40,
+      "production_number": 18,
+      "kind": "効果音",
+      "notes": "短い警告ブザーが明確に途切れて停止する。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-08:0"
+      ],
+      "sha256": {
+        "ogg": "435d4b59a2c1c74bba23db52f6a91b88a88afae7ac3cfed74ba63c0e8bb783f7",
+        "wav": "795eabe2f1dcfea0f1d6707689d1dce30bb641df825f941cf9070930efc268d4"
+      },
+      "source_ogg": "inbox/audio_ogg/warning-buzzer-stop.ogg",
+      "source_wav": "inbox/audio_wav/warning-buzzer-stop.wav"
+    },
+    {
+      "number": "044",
+      "key": "transmitter-start",
+      "title": "送信機の起動",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 2.6,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-32"
+      ],
+      "description": "送信機のリレーと起動、続く窓留め具の小さな音。",
+      "wav": "assets/audio/masters/sfx/transmitter-start.wav",
+      "ogg": "assets/audio/sfx/transmitter-start.ogg",
+      "peak_dbfs": -13.999999999956467,
+      "rms_dbfs": -29.575600034571256,
+      "boundary_delta": 6.59809659460241e-39,
+      "production_number": 19,
+      "kind": "効果音",
+      "notes": "送信機のリレーと起動、続く窓留め具の小さな音。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-32:0"
+      ],
+      "sha256": {
+        "ogg": "4691da2f33a87395aa29e7a1c868c6790e4378c58bfc41e4e62fd9f00057674a",
+        "wav": "17bd8ce3f10648879ad86265b3d873849a762cd9acdd2d743cc90385890d3ceb"
+      },
+      "source_ogg": "inbox/audio_ogg/transmitter-start.ogg",
+      "source_wav": "inbox/audio_wav/transmitter-start.wav"
+    },
+    {
+      "number": "045",
+      "key": "door-knock",
+      "title": "扉を叩く音",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 1.8,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-31"
+      ],
+      "description": "木製扉への三回のノック。",
+      "wav": "assets/audio/masters/sfx/door-knock.wav",
+      "ogg": "assets/audio/sfx/door-knock.ogg",
+      "peak_dbfs": -11.999999999965421,
+      "rms_dbfs": -32.54758233212938,
+      "boundary_delta": 9.063876039207292e-37,
+      "production_number": 20,
+      "kind": "効果音",
+      "notes": "木製扉への三回のノック。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-31:0"
+      ],
+      "sha256": {
+        "ogg": "e227f4a5f2a6a41a79a035e4018b3cd06e6477e903eea06287a161186af4369e",
+        "wav": "29af75598de153a5ad522c5b55434b2c0aae8d97e6477174ebc0a77ddb118959"
+      },
+      "source_ogg": "inbox/audio_ogg/door-knock.ogg",
+      "source_wav": "inbox/audio_wav/door-knock.wav"
+    },
+    {
+      "number": "046",
+      "key": "terminal-scheduled",
+      "title": "予約端末の作動",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 2.4,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-07"
+      ],
+      "description": "予約時刻に端末が自動起動するリレーと駆動部の音。",
+      "wav": "assets/audio/masters/sfx/terminal-scheduled.wav",
+      "ogg": "assets/audio/sfx/terminal-scheduled.ogg",
+      "peak_dbfs": -14.999999999951154,
+      "rms_dbfs": -32.743588710205366,
+      "boundary_delta": 6.06044732436422e-39,
+      "production_number": 21,
+      "kind": "効果音",
+      "notes": "予約時刻に端末が自動起動するリレーと駆動部の音。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-07:3"
+      ],
+      "sha256": {
+        "ogg": "d62cef9d99b2c4f7892155dc822a8a69a34f3f7eb8c29ef7d552ce8ac6f4a778",
+        "wav": "cecacf1b3fedf698ee1b05ab255b32efea0f080876888f7d1747f46af52f480e"
+      },
+      "source_ogg": "inbox/audio_ogg/terminal-scheduled.ogg",
+      "source_wav": "inbox/audio_wav/terminal-scheduled.wav"
+    },
+    {
+      "number": "047",
+      "key": "report-print",
+      "title": "報告書の印字",
+      "category": "合成効果音",
+      "source": "deterministic procedural audio synthesis",
+      "duration_seconds": 3.6,
+      "sample_rate": 44100,
+      "channels": 2,
+      "bits": 16,
+      "loop": false,
+      "cases": [
+        "case-24"
+      ],
+      "description": "短い機械式の印字に続く一枚の紙送り。",
+      "wav": "assets/audio/masters/sfx/report-print.wav",
+      "ogg": "assets/audio/sfx/report-print.ogg",
+      "peak_dbfs": -12.999999999961203,
+      "rms_dbfs": -35.19859207725214,
+      "boundary_delta": 2.259731960961239e-39,
+      "production_number": 22,
+      "kind": "効果音",
+      "notes": "短い機械式の印字に続く一枚の紙送り。",
+      "batch": "2026-09-20-additional-01",
+      "replay_cues": [
+        "case-24:2"
+      ],
+      "sha256": {
+        "ogg": "f9d85eb466b162fe3ccadfeb32f2b4180ee670bb75fea918958791f72a4e6aef",
+        "wav": "b0f1ab954f325536c3374c0a4b625651e2767971545588b2552840595acd839a"
+      },
+      "source_ogg": "inbox/audio_ogg/report-print.ogg",
+      "source_wav": "inbox/audio_wav/report-print.wav"
     }
   ],
   "repairs": [
@@ -522,5 +1310,239 @@
       "path": "assets/source/20260920/studio-before-banner-fix.png",
       "reason": "現場の幕が残る修正前のスタジオ。ゲームでは最終修正版を使用。"
     }
-  ]
+  ],
+  "pending_images": [
+    {
+      "id": "lecture",
+      "name": "講堂",
+      "generated_file": "exec-d8ca685c-0f37-4ba5-85e8-5adf093b359f.png",
+      "intended_path": "assets/scenes/lecture.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "changing",
+      "name": "プール更衣室",
+      "generated_file": "exec-6372f197-e785-4d75-aa44-be5f61b6ddbd.png",
+      "intended_path": "assets/scenes/changing.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "ceiling",
+      "name": "天井点検路",
+      "generated_file": "exec-afbdea39-609a-45c2-b5d5-f7b3e9f3d308.png",
+      "intended_path": "assets/scenes/ceiling.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "medical",
+      "name": "医務室",
+      "generated_file": "exec-efc61a25-548c-4052-b91a-ede8c763d4e6.png",
+      "intended_path": "assets/scenes/medical.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "morgue",
+      "name": "安置庫",
+      "generated_file": "exec-f20989b7-d2e6-45da-bb97-ab359b54aa58.png",
+      "intended_path": "assets/scenes/morgue.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "consult",
+      "name": "防音相談室",
+      "generated_file": "exec-52453a55-f012-423c-aec0-397043fefb16.png",
+      "intended_path": "assets/scenes/consult.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "rescue",
+      "name": "救護廊下",
+      "generated_file": "exec-79d52ab8-9902-413e-8d2a-9a723d1077f4.png",
+      "intended_path": "assets/scenes/rescue.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "theater",
+      "name": "小劇場",
+      "generated_file": "exec-5f5cc02a-133c-4dd8-8874-6d6f5016d171.png",
+      "intended_path": "assets/scenes/theater.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "wardrobe",
+      "name": "衣装庫",
+      "generated_file": "exec-e2415789-25d1-4827-97ab-1744ab79ad1a.png",
+      "intended_path": "assets/scenes/wardrobe.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "darkroom",
+      "name": "遮光観察室",
+      "generated_file": "exec-0954dc43-bfc4-4ba7-8b54-9d06904a223c.png",
+      "intended_path": "assets/scenes/darkroom.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "photo",
+      "name": "旧写真室",
+      "generated_file": "exec-27134aaa-f6b6-4b88-a036-a228b6023d13.png",
+      "intended_path": "assets/scenes/photo.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "exhibition",
+      "name": "展示ホール",
+      "generated_file": "exec-ec3158fb-1066-43be-a5e6-b3e7eb1b29f1.png",
+      "intended_path": "assets/scenes/exhibition.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "post",
+      "name": "配達箱前",
+      "generated_file": "exec-4531ab39-bc88-49f9-84f8-cd25734b155e.png",
+      "intended_path": "assets/scenes/post.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "review",
+      "name": "規約審査室",
+      "generated_file": "exec-4b25487b-0cf3-45d8-804a-d5f72ca685bf.png",
+      "intended_path": "assets/scenes/review.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "equipment",
+      "name": "装備点検室",
+      "generated_file": "exec-df97db97-b04b-4859-9aa9-63e9e88cc53a.png",
+      "intended_path": "assets/scenes/equipment.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "music",
+      "name": "音楽室前",
+      "generated_file": "exec-55907aed-f05a-439c-a670-0986b410d729.png",
+      "intended_path": "assets/scenes/music.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "store",
+      "name": "物品庫",
+      "generated_file": "exec-0b046a47-d676-4d6b-abb4-6dec19884843.png",
+      "intended_path": "assets/scenes/store.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "aid",
+      "name": "物品庫前の救護所",
+      "generated_file": "exec-ccd11cfd-ac86-4c1d-94d9-69cde71cf104.png",
+      "intended_path": "assets/scenes/aid.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "service",
+      "name": "乾いた点検廊下",
+      "generated_file": "exec-52d4c10e-8fc6-4851-8271-7205f3b6a450.png",
+      "intended_path": "assets/scenes/service.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "dock",
+      "name": "桟橋",
+      "generated_file": "exec-72eb6d0e-eea0-446b-bf36-e427e9fe36ab.png",
+      "intended_path": "assets/scenes/dock.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "flood",
+      "name": "水没試験室",
+      "generated_file": "exec-5c576af1-1979-4969-afaf-21828ad37f35.png",
+      "intended_path": "assets/scenes/flood.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "observatory",
+      "name": "天文展示室",
+      "generated_file": "exec-b8e9e2a9-d42a-4a7d-b5d4-40ba2d84866d.png",
+      "intended_path": "assets/scenes/observatory.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "clock",
+      "name": "時計塔",
+      "generated_file": "exec-7ecd53eb-7087-42a0-963e-9054de50ec0f.png",
+      "intended_path": "assets/scenes/clock.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "lift",
+      "name": "地下貨物リフト",
+      "generated_file": "exec-17c4ff31-e313-4334-ae8d-fd91984d8fce.png",
+      "intended_path": "assets/scenes/lift.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "roof",
+      "name": "屋上リフト口",
+      "generated_file": "exec-d7fe436a-2496-4dea-9824-93ddfbbbf331.png",
+      "intended_path": "assets/scenes/roof.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "walkway",
+      "name": "外周点検通路",
+      "generated_file": "exec-9809ebdb-9b1c-4a3e-b28f-a3db13543fb7.png",
+      "intended_path": "assets/scenes/walkway.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "shelter",
+      "name": "避難所",
+      "generated_file": "exec-17f9223a-afb3-4271-ad01-82de35015018.png",
+      "intended_path": "assets/scenes/shelter.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "management",
+      "name": "中央管理室",
+      "generated_file": "exec-08852c7d-3d1b-4106-ae93-4b50711dfa86.png",
+      "intended_path": "assets/scenes/management.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "stairs",
+      "name": "非常階段",
+      "generated_file": "exec-054f1fd3-ec04-487c-9d0e-29ec949968b1.png",
+      "intended_path": "assets/scenes/stairs.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "mechanism",
+      "name": "中央機構室",
+      "generated_file": "exec-5cb6bbd5-bd7b-4eea-b9be-2d6062a45419.png",
+      "intended_path": "assets/scenes/mechanism.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "comms",
+      "name": "非常通信室",
+      "generated_file": "exec-a5cb13ae-960d-492e-a3c1-2374d2431fdb.png",
+      "intended_path": "assets/scenes/comms.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "terminal",
+      "name": "最終報告室",
+      "generated_file": "exec-c9fb88f2-b05b-48c7-949f-a1023b23ca5e.png",
+      "intended_path": "assets/scenes/terminal.png",
+      "status": "generated-not-received"
+    },
+    {
+      "id": "south",
+      "name": "南門",
+      "generated_file": "exec-9e292744-e1f3-404d-ad7d-f388cc90549a.png",
+      "intended_path": "assets/scenes/south.png",
+      "status": "generated-not-received"
+    }
+  ],
+  "updated_at": "2026-09-20"
 }

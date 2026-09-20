@@ -2,13 +2,13 @@
 
 更新日：2026-09-20。現在の実装・配置済み素材に基づく制作リストです。
 
-画像は8地点の漫画線画を配置済みです。残る33地点には既存SVGが表示されるため、ゲームの進行は可能です。以下33枚は画風を揃えるための未制作背景です。
+画像は8地点の漫画線画を配置済みです。残る33地点の背景は制作済みですが、今回のアップロードにPNG本体が含まれていないため未受領・未配置です。ゲームは既存SVGを表示します。採用名と予定配置先は../assets/source/20260920-additional-01/image_selection.json、受領状態は../assets/asset-manifest.jsonのpending_imagesを参照してください。
 
-音はBGM4曲・環境音2種・効果音18種を配置済みです。下記22項目は本文の情景をより正確に音へ反映するための追加素材です。未制作の音を別の出来事の音で埋めず、現在は該当の字幕を表示します。
+音はBGM4曲・環境音2種・効果音41種（全47音源）を配置済みです。以前の不足リストにあった追加効果音22項目・23音源は受領・配置・再現場面への接続が完了しました。
 
 共通画風：シンプルな漫画の白黒線画。細い輪郭線、限定した黒ベタとスクリーントーン、広い白い余白。デスゲームの現場報告書に添えた客観的な記録画。横長16:9、基準1280×720以上。人型・文字・識別札は必要に応じてゲーム側で重ね、推理上必要な関係は本文に合わせます。
 
-## 背景33枚
+## 背景33枚（制作済み・PNG本体は未受領）
 
 ### 01 講堂（lecture）
 
@@ -274,141 +274,9 @@
 
 貯水塔が門の背後に見える構図にします。北門という偽装表示は別レイヤーで正確に表します。
 
-## 専用音の追加22項目
+## 追加効果音（受領・配置完了）
 
-BGM・環境音・UI音の追加は必須ではありません。各素材は44.1kHzのWAV原本とOGG版を用意します。演出音で証言の真偽や隠された死亡時刻を知らせません。
-
-### 01 放送卓スイッチ（broadcast-switch）
-
-使用場面：studio / case-33。予定配置先：assets/audio/sfx/broadcast-switch.ogg
-
-手元の切替音だけの短い素材。既存broadcast-chimeはチャイムを含むためこの台詞へ流用しません。
-
-### 02 椅子と金属食器の転倒（chair-fall-tableware）
-
-使用場面：cafeteria / case-03。予定配置先：assets/audio/sfx/chair-fall-tableware.ogg
-
-椅子が倒れ、金属食器が転がる一連の音。
-
-### 03 重い辞典が返却口へ落ちる音（heavy-book-return）
-
-使用場面：library / case-23。予定配置先：assets/audio/sfx/heavy-book-return.ogg
-
-金属角のある厚い本の低い落下音。
-
-### 04 本が床へ落ちる音（book-drop）
-
-使用場面：library / case-26。予定配置先：assets/audio/sfx/book-drop.ogg
-
-通常の本の落下。重い辞典と区別します。
-
-### 05 衣装の擦れと杖の一打（cloth-cane）
-
-使用場面：wardrobe / case-34。予定配置先：assets/audio/sfx/cloth-cane.ogg
-
-布が擦れた後、杖先が一度だけ鳴ります。
-
-### 06 高所足場の金具（catwalk-metal）
-
-使用場面：gym / case-15。予定配置先：assets/audio/sfx/catwalk-metal.ogg
-
-軽い金具の鳴り。落下や破損を勝手に追加しません。
-
-### 07 配達箱の開扉と封筒（delivery-envelope）
-
-使用場面：post / case-04。予定配置先：assets/audio/sfx/delivery-envelope.ogg
-
-小さな開閉音と一枚の紙の落下。
-
-### 08 鏡板の軋みとカメラの滑り（mirror-camera）
-
-使用場面：theater / case-10。予定配置先：assets/audio/sfx/mirror-camera.ogg
-
-鏡の回転部の軋み、続く床上の滑り。
-
-### 09 台車停止と鋏を置く音（cart-stop-scissors）
-
-使用場面：rescue / case-25。予定配置先：assets/audio/sfx/cart-stop-scissors.ogg
-
-車輪が止まり、金属の鋏を置きます。
-
-### 10 投影機の回転・停止（projector-loop）
-
-使用場面：observatory / case-16・case-36。予定配置先：assets/audio/sfx/projector-loop.ogg
-
-定常ループと停止音を分けて用意します。
-
-### 11 衣装掛けの転倒（clothes-rack-fall）
-
-使用場面：wardrobe / case-20。予定配置先：assets/audio/sfx/clothes-rack-fall.ogg
-
-軽い金属製ラックの倒れる音。
-
-### 12 箱の崩落（crate-collapse）
-
-使用場面：store / case-39。予定配置先：assets/audio/sfx/crate-collapse.ogg
-
-複数の箱が崩れ、細い金属音が残ります。
-
-### 13 無人の自動演奏ピアノ（player-piano）
-
-使用場面：music / case-35。予定配置先：assets/audio/sfx/player-piano.ogg
-
-紙帯式の演奏。探索BGMとは別に、劇中の音源として作ります。
-
-### 14 案内板の切替（sign-flip）
-
-使用場面：south / case-27。予定配置先：assets/audio/sfx/sign-flip.ogg
-
-表示板の回転・停止だけの短い音。
-
-### 15 鍵束（keys-jingle）
-
-使用場面：stairs / case-05、clock / case-28。予定配置先：assets/audio/sfx/keys-jingle.ogg
-
-複数の鍵がぶつかる音。
-
-### 16 排水の終わり（drain-finish）
-
-使用場面：flood / case-09。予定配置先：assets/audio/sfx/drain-finish.ogg
-
-水量が減り、最後に排水音が止まります。
-
-### 17 医療器具の接触（medical-tools）
-
-使用場面：medical / case-13。予定配置先：assets/audio/sfx/medical-tools.ogg
-
-小さな金属器具の接触。
-
-### 18 警告ブザーの停止（warning-buzzer-stop）
-
-使用場面：mechanism / case-08。予定配置先：assets/audio/sfx/warning-buzzer-stop.ogg
-
-短い警告音と途切れる終端。
-
-### 19 送信機の起動（transmitter-start）
-
-使用場面：comms / case-32。予定配置先：assets/audio/sfx/transmitter-start.ogg
-
-通信機の起動音と窓留め具の小音。
-
-### 20 扉を叩く音（door-knock）
-
-使用場面：terminal / case-31。予定配置先：assets/audio/sfx/door-knock.ogg
-
-扉への数回のノック。
-
-### 21 予約端末の作動（terminal-scheduled）
-
-使用場面：terminal / case-07。予定配置先：assets/audio/sfx/terminal-scheduled.ogg
-
-人が操作していない端末の自動作動。
-
-### 22 報告書の印字（report-print）
-
-使用場面：terminal / case-24。予定配置先：assets/audio/sfx/report-print.ogg
-
-短い印字と紙送り。
+追加22項目・23音源は不足一覧から除外しました。対応と配置先は[ASSET_PLACEMENT.md](ASSET_PLACEMENT.md)、全47点の試聴は[preview.html](../assets/audio/preview.html)を参照してください。
 
 ## 既存背景の追加カット候補
 

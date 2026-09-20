@@ -11,3 +11,5 @@ scenario/ORIGINAL_40.md と original-40.json は会話で作成した40人の原
 本文の修正は src/data の正本へ反映し、npm run docs で実装本文の資料を再生成します。生成資料だけを書き換えないでください。
 
 素材の現状は[配置記録](../inbox/ASSET_PLACEMENT.md)と[不足素材一覧](../inbox/MISSING_ASSETS.md)を参照してください。
+
+音素材は全47点を配置済みで、[試聴ページ](../assets/audio/preview.html)から確認できます。追加背景33枚は制作済み・PNG本体未受領です。[採用画像対応](../assets/source/20260920-additional-01/image_selection.json)に予定配置先を記録しています。

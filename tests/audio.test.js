@@ -11,6 +11,7 @@ function player() {
     field: { url: 'field.ogg', loop: true },
     end: { url: 'end.ogg' },
     cue: { url: 'cue.ogg' },
+    projector: { url: 'projector.ogg', loop: true },
   };
   const controller = new ArchiveAudio(assets, (url) => {
     const audio = {
@@ -60,6 +61,25 @@ test('changing context replaces a loop and does not restart a completed ending',
   controller.setContext({ music: 'end' });
   assert.equal(created.length, 2);
   assert.equal(created[1].paused, true);
+});
+test('looping replay effects stop on line changes, mute, and background suspension', () => {
+  const { controller, created } = player();
+  controller.setEnabled(true);
+  controller.play('projector');
+  assert.equal(created[0].loop, true);
+  controller.stopEffects();
+  assert.equal(created[0].paused, true);
+  assert.equal(controller.effects.size, 0);
+  controller.play('projector');
+  controller.setEnabled(false);
+  assert.equal(created[1].paused, true);
+  controller.setEnabled(true);
+  assert.equal(created.length, 2);
+  controller.play('projector');
+  controller.setSuspended(true);
+  assert.equal(created[2].paused, true);
+  controller.setSuspended(false);
+  assert.equal(created.length, 3);
 });
 test('placed media exists and replay cues are attached only to objective lines', () => {
   const manifest = JSON.parse(
