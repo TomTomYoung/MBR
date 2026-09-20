@@ -1,0 +1,186 @@
+[
+  {
+    "key": "broadcast-switch",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -37.535,
+    "loop_boundary_delta": 2.362564265993413e-38
+  },
+  {
+    "key": "chair-fall-tableware",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -31.764,
+    "loop_boundary_delta": 4.5128811278707435e-37
+  },
+  {
+    "key": "heavy-book-return",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -32.001,
+    "loop_boundary_delta": 1.546230269135411e-36
+  },
+  {
+    "key": "book-drop",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -31.586,
+    "loop_boundary_delta": 5.282022856951318e-37
+  },
+  {
+    "key": "cloth-cane",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -31.309,
+    "loop_boundary_delta": 1.7561026778880953e-38
+  },
+  {
+    "key": "catwalk-metal",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -14.0,
+    "rms_dbfs": -30.879,
+    "loop_boundary_delta": 1.668044651036781e-38
+  },
+  {
+    "key": "delivery-envelope",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -32.924,
+    "loop_boundary_delta": 5.0393108194202e-38
+  },
+  {
+    "key": "mirror-camera",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -29.273,
+    "loop_boundary_delta": 3.609605383960581e-37
+  },
+  {
+    "key": "cart-stop-scissors",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -29.944,
+    "loop_boundary_delta": 1.939105212303467e-37
+  },
+  {
+    "key": "projector-loop",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -21.0,
+    "rms_dbfs": -25.642,
+    "loop_boundary_delta": 0.0027249690915857766
+  },
+  {
+    "key": "projector-stop",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -17.0,
+    "rms_dbfs": -24.094,
+    "loop_boundary_delta": 1.4589297401197342e-38
+  },
+  {
+    "key": "clothes-rack-fall",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -28.041,
+    "loop_boundary_delta": 4.522828984245908e-38
+  },
+  {
+    "key": "crate-collapse",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -31.817,
+    "loop_boundary_delta": 1.2205726798142158e-36
+  },
+  {
+    "key": "player-piano",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -15.0,
+    "rms_dbfs": -26.672,
+    "loop_boundary_delta": 3.0544269715006185e-38
+  },
+  {
+    "key": "sign-flip",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -10.0,
+    "rms_dbfs": -33.371,
+    "loop_boundary_delta": 2.7467617704879972e-37
+  },
+  {
+    "key": "keys-jingle",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -13.0,
+    "rms_dbfs": -30.593,
+    "loop_boundary_delta": 3.339560932616343e-39
+  },
+  {
+    "key": "drain-finish",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -13.0,
+    "rms_dbfs": -31.382,
+    "loop_boundary_delta": 6.45393185279032e-38
+  },
+  {
+    "key": "medical-tools",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -15.0,
+    "rms_dbfs": -32.803,
+    "loop_boundary_delta": 1.9318276179239024e-39
+  },
+  {
+    "key": "warning-buzzer-stop",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -17.0,
+    "rms_dbfs": -22.722,
+    "loop_boundary_delta": 3.6417912185714798e-40
+  },
+  {
+    "key": "transmitter-start",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -14.0,
+    "rms_dbfs": -29.576,
+    "loop_boundary_delta": 6.59809659460241e-39
+  },
+  {
+    "key": "door-knock",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -12.0,
+    "rms_dbfs": -32.548,
+    "loop_boundary_delta": 9.063876039207292e-37
+  },
+  {
+    "key": "terminal-scheduled",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -15.0,
+    "rms_dbfs": -32.744,
+    "loop_boundary_delta": 6.06044732436422e-39
+  },
+  {
+    "key": "report-print",
+    "wav_decode": true,
+    "ogg_decode": true,
+    "peak_dbfs": -13.0,
+    "rms_dbfs": -35.199,
+    "loop_boundary_delta": 2.259731960961239e-39
+  }
+]

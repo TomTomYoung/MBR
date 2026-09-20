@@ -1,0 +1,200 @@
+[
+  {
+    "id": "lecture",
+    "name": "講堂",
+    "generated_file": "exec-d8ca685c-0f37-4ba5-85e8-5adf093b359f.png",
+    "intended_path": "assets/scenes/lecture.png"
+  },
+  {
+    "id": "changing",
+    "name": "プール更衣室",
+    "generated_file": "exec-6372f197-e785-4d75-aa44-be5f61b6ddbd.png",
+    "intended_path": "assets/scenes/changing.png"
+  },
+  {
+    "id": "ceiling",
+    "name": "天井点検路",
+    "generated_file": "exec-afbdea39-609a-45c2-b5d5-f7b3e9f3d308.png",
+    "intended_path": "assets/scenes/ceiling.png"
+  },
+  {
+    "id": "medical",
+    "name": "医務室",
+    "generated_file": "exec-efc61a25-548c-4052-b91a-ede8c763d4e6.png",
+    "intended_path": "assets/scenes/medical.png"
+  },
+  {
+    "id": "morgue",
+    "name": "安置庫",
+    "generated_file": "exec-f20989b7-d2e6-45da-bb97-ab359b54aa58.png",
+    "intended_path": "assets/scenes/morgue.png"
+  },
+  {
+    "id": "consult",
+    "name": "防音相談室",
+    "generated_file": "exec-52453a55-f012-423c-aec0-397043fefb16.png",
+    "intended_path": "assets/scenes/consult.png"
+  },
+  {
+    "id": "rescue",
+    "name": "救護廊下",
+    "generated_file": "exec-79d52ab8-9902-413e-8d2a-9a723d1077f4.png",
+    "intended_path": "assets/scenes/rescue.png"
+  },
+  {
+    "id": "theater",
+    "name": "小劇場",
+    "generated_file": "exec-5f5cc02a-133c-4dd8-8874-6d6f5016d171.png",
+    "intended_path": "assets/scenes/theater.png"
+  },
+  {
+    "id": "wardrobe",
+    "name": "衣装庫",
+    "generated_file": "exec-e2415789-25d1-4827-97ab-1744ab79ad1a.png",
+    "intended_path": "assets/scenes/wardrobe.png"
+  },
+  {
+    "id": "darkroom",
+    "name": "遮光観察室",
+    "generated_file": "exec-0954dc43-bfc4-4ba7-8b54-9d06904a223c.png",
+    "intended_path": "assets/scenes/darkroom.png"
+  },
+  {
+    "id": "photo",
+    "name": "旧写真室",
+    "generated_file": "exec-27134aaa-f6b6-4b88-a036-a228b6023d13.png",
+    "intended_path": "assets/scenes/photo.png"
+  },
+  {
+    "id": "exhibition",
+    "name": "展示ホール",
+    "generated_file": "exec-ec3158fb-1066-43be-a5e6-b3e7eb1b29f1.png",
+    "intended_path": "assets/scenes/exhibition.png"
+  },
+  {
+    "id": "post",
+    "name": "配達箱前",
+    "generated_file": "exec-4531ab39-bc88-49f9-84f8-cd25734b155e.png",
+    "intended_path": "assets/scenes/post.png"
+  },
+  {
+    "id": "review",
+    "name": "規約審査室",
+    "generated_file": "exec-4b25487b-0cf3-45d8-804a-d5f72ca685bf.png",
+    "intended_path": "assets/scenes/review.png"
+  },
+  {
+    "id": "equipment",
+    "name": "装備点検室",
+    "generated_file": "exec-df97db97-b04b-4859-9aa9-63e9e88cc53a.png",
+    "intended_path": "assets/scenes/equipment.png"
+  },
+  {
+    "id": "music",
+    "name": "音楽室前",
+    "generated_file": "exec-55907aed-f05a-439c-a670-0986b410d729.png",
+    "intended_path": "assets/scenes/music.png"
+  },
+  {
+    "id": "store",
+    "name": "物品庫",
+    "generated_file": "exec-0b046a47-d676-4d6b-abb4-6dec19884843.png",
+    "intended_path": "assets/scenes/store.png"
+  },
+  {
+    "id": "aid",
+    "name": "物品庫前の救護所",
+    "generated_file": "exec-ccd11cfd-ac86-4c1d-94d9-69cde71cf104.png",
+    "intended_path": "assets/scenes/aid.png"
+  },
+  {
+    "id": "service",
+    "name": "乾いた点検廊下",
+    "generated_file": "exec-52d4c10e-8fc6-4851-8271-7205f3b6a450.png",
+    "intended_path": "assets/scenes/service.png"
+  },
+  {
+    "id": "dock",
+    "name": "桟橋",
+    "generated_file": "exec-72eb6d0e-eea0-446b-bf36-e427e9fe36ab.png",
+    "intended_path": "assets/scenes/dock.png"
+  },
+  {
+    "id": "flood",
+    "name": "水没試験室",
+    "generated_file": "exec-5c576af1-1979-4969-afaf-21828ad37f35.png",
+    "intended_path": "assets/scenes/flood.png"
+  },
+  {
+    "id": "observatory",
+    "name": "天文展示室",
+    "generated_file": "exec-b8e9e2a9-d42a-4a7d-b5d4-40ba2d84866d.png",
+    "intended_path": "assets/scenes/observatory.png"
+  },
+  {
+    "id": "clock",
+    "name": "時計塔",
+    "generated_file": "exec-7ecd53eb-7087-42a0-963e-9054de50ec0f.png",
+    "intended_path": "assets/scenes/clock.png"
+  },
+  {
+    "id": "lift",
+    "name": "地下貨物リフト",
+    "generated_file": "exec-17c4ff31-e313-4334-ae8d-fd91984d8fce.png",
+    "intended_path": "assets/scenes/lift.png"
+  },
+  {
+    "id": "roof",
+    "name": "屋上リフト口",
+    "generated_file": "exec-d7fe436a-2496-4dea-9824-93ddfbbbf331.png",
+    "intended_path": "assets/scenes/roof.png"
+  },
+  {
+    "id": "walkway",
+    "name": "外周点検通路",
+    "generated_file": "exec-9809ebdb-9b1c-4a3e-b28f-a3db13543fb7.png",
+    "intended_path": "assets/scenes/walkway.png"
+  },
+  {
+    "id": "shelter",
+    "name": "避難所",
+    "generated_file": "exec-17f9223a-afb3-4271-ad01-82de35015018.png",
+    "intended_path": "assets/scenes/shelter.png"
+  },
+  {
+    "id": "management",
+    "name": "中央管理室",
+    "generated_file": "exec-08852c7d-3d1b-4106-ae93-4b50711dfa86.png",
+    "intended_path": "assets/scenes/management.png"
+  },
+  {
+    "id": "stairs",
+    "name": "非常階段",
+    "generated_file": "exec-054f1fd3-ec04-487c-9d0e-29ec949968b1.png",
+    "intended_path": "assets/scenes/stairs.png"
+  },
+  {
+    "id": "mechanism",
+    "name": "中央機構室",
+    "generated_file": "exec-5cb6bbd5-bd7b-4eea-b9be-2d6062a45419.png",
+    "intended_path": "assets/scenes/mechanism.png"
+  },
+  {
+    "id": "comms",
+    "name": "非常通信室",
+    "generated_file": "exec-a5cb13ae-960d-492e-a3c1-2374d2431fdb.png",
+    "intended_path": "assets/scenes/comms.png"
+  },
+  {
+    "id": "terminal",
+    "name": "最終報告室",
+    "generated_file": "exec-c9fb88f2-b05b-48c7-949f-a1023b23ca5e.png",
+    "intended_path": "assets/scenes/terminal.png"
+  },
+  {
+    "id": "south",
+    "name": "南門",
+    "generated_file": "exec-9e292744-e1f3-404d-ad7d-f388cc90549a.png",
+    "intended_path": "assets/scenes/south.png"
+  }
+]
