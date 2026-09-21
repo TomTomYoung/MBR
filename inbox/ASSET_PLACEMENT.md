@@ -1,6 +1,6 @@
 # 素材の配置記録
 
-2026-09-21更新。遮光観察室・旧写真室・展示ホール・配達箱前・規約審査室・音楽室前の背景6点を追加し、現在は画像23点、音47点（OGGとWAV原本各47点）です。残る背景18地点は未配置です。装備点検室は受領PNGの破損を確認し、残り17地点は今回未確認です。以下の過去記録は各作業時点の状態です。
+2026-09-21更新。装備点検室・物品庫・物品庫前の救護所・乾いた点検廊下・桟橋・水没試験室の背景6点を追加し、現在は画像29点、音47点（OGGとWAV原本各47点）です。残る背景12地点は今回未確認・未配置です。装備点検室の受領PNG破損による保留は解消しました。以下の過去記録は各作業時点の状態です。
 
 ## 初回の画像
 
@@ -305,3 +305,21 @@ inbox/ChatGPT Image 2026年9月21日 05_34_57 (3).png → assets/scenes/ceiling.
 6枚ともPNGの正常読込と元ファイルとのGit blob一致を確認し、再圧縮せず移動しています。既存のPNG優先読込により6地点はPNG表示になります。manifestへ追加し、不足一覧から該当する6地点を除外しました。
 
 装備点検室の受領ファイルinbox/ChatGPT Image 2026年9月21日 05_35_01 (17).pngはPNGとして読み込めませんでした。今回は原データをinboxに残し、manifestへ破損・復旧待ちの状態を記録しました。正常な音楽室前を先に配置し、画像の処理は6枚で終了しています。
+
+## 2026-09-21 装備点検室から水没試験室までの6枚を配置
+
+装備点検室（equipment）：inbox/ChatGPT Image 2026年9月21日 05_35_01 (17).png → assets/scenes/equipment.png。武器棚・防具棚・籠手の空き枠を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/equipment.binへ保管。
+
+物品庫（store）：inbox/ChatGPT Image 2026年9月21日 05_35_01 (18).png → assets/scenes/store.png。箱の山・開封済みの箱・封印紙片を確認しました。正常な受領原本をそのまま移動。
+
+物品庫前の救護所（aid）：inbox/ChatGPT Image 2026年9月21日 05_35_01 (19).png → assets/scenes/aid.png。救護器具・開封された荷物・足跡を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/aid.binへ保管。
+
+乾いた点検廊下（service）：inbox/ChatGPT Image 2026年9月21日 05_35_01 (20).png → assets/scenes/service.png。水路に平行な乾いた通路・温室側への接続を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/service.binへ保管。
+
+桟橋（dock）：inbox/ChatGPT Image 2026年9月21日 05_35_01 (21).png → assets/scenes/dock.png。上がった跳ね橋・操作輪・水面・対岸を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/dock.binへ保管。
+
+水没試験室（flood）：inbox/ChatGPT Image 2026年9月21日 05_35_01 (22).png → assets/scenes/flood.png。乾いた床・水位痕・排水口・操作端末を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/flood.binへ保管。
+
+装備点検室・物品庫前の救護所・乾いた点検廊下・桟橋・水没試験室の5枚は、正常画像をUTF-8の置換付きで復号し、CRLFをLFへ正規化して再度UTF-8で符号化すると、破損した受領データとバイト単位で完全一致しました。この一致を照合根拠として正常画像を採用し、6枚すべてのPNG読込を確認しました。物品庫は受領原本と配置画像のGit blobが一致しています。
+
+破損データは拡張子.binで保管し、manifestに受領名・正常画像のSHA256・受領blob・復旧blob・保管先・照合方法を記録しました。既存のPNG優先読込により6地点はPNG表示になります。不足一覧から該当する6地点を除外し、今回の処理は6枚で終了しています。

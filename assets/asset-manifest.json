@@ -138,6 +138,77 @@
       "source": "inbox/ChatGPT Image 2026年9月21日 05_35_00 (16).png",
       "path": "assets/scenes/music.png",
       "sha256": "9d2b462a004faf57b9d37c92906a5e9ea0015ceef1666f93a604d57acdc01cd3"
+    },
+    {
+      "node": "equipment",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (17).png",
+      "path": "assets/scenes/equipment.png",
+      "sha256": "cac849b47790fc7b9678ee0b7cd5bab34ba598e2b1f8ea073c37e5c529973084",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "bcdc5395ee446c181ce04a49bcc7266b3ce0fe28",
+        "restored_blob": "2ddbdbaf2e3bde9a12e372588a8085f75772a647",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/equipment.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "store",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (18).png",
+      "path": "assets/scenes/store.png",
+      "sha256": "253c01876e72002d4ab3f82b573b493d3ffc2b0a78eca17463be581a981a63fb"
+    },
+    {
+      "node": "aid",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (19).png",
+      "path": "assets/scenes/aid.png",
+      "sha256": "4994e4ceceac7eb36a03463d95b2900dfdb8f853d246cc84a83ea2fed3fe921f",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "c3e1639d190119485038c0f236c8a70935693cd7",
+        "restored_blob": "667005e2d2d5c4aa48664b5f92217a7dc9998cd7",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/aid.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "service",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (20).png",
+      "path": "assets/scenes/service.png",
+      "sha256": "8571806e4efa43b107b7574ffb7cc82d16a01b1d3ca9ad83436c5fbbc98a9bae",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "0eb0b09f40586e66a2a0feb3056e5e7fc92335d6",
+        "restored_blob": "fad793c283115986c06b9177d5095859601b8abd",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/service.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "dock",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (21).png",
+      "path": "assets/scenes/dock.png",
+      "sha256": "e2bc13465900d10f989e52ab2192f19e8721215b978282efbd370b090e84995f",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "3b975311e05a1cb4333826ce2ff30579751d19ac",
+        "restored_blob": "8da1e925534c7170dc360c3b45213168da1b2d65",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/dock.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "flood",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (22).png",
+      "path": "assets/scenes/flood.png",
+      "sha256": "6521e8cf97530b9d218789458c08e95aed0b7d18abcd0c0ccbf6872623330e9c",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "249a9f396f1f28c19423dd3740dfa6a80d882435",
+        "restored_blob": "99feb57eef584c21a8eca7a32ea9bf7f5c1008f6",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/flood.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
     }
   ],
   "audio": [
@@ -1402,51 +1473,6 @@
     }
   ],
   "pending_images": [
-    {
-      "id": "equipment",
-      "name": "装備点検室",
-      "generated_file": "exec-df97db97-b04b-4859-9aa9-63e9e88cc53a.png",
-      "intended_path": "assets/scenes/equipment.png",
-      "status": "received-corrupt",
-      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (17).png",
-      "source_blob": "bcdc5395ee446c181ce04a49bcc7266b3ce0fe28",
-      "note": "2026-09-21確認：受領ファイルをPNGとして読み込めないため未配置。inboxに原データを残し、正常原本との照合・復旧は次回以降に行う。"
-    },
-    {
-      "id": "store",
-      "name": "物品庫",
-      "generated_file": "exec-0b046a47-d676-4d6b-abb4-6dec19884843.png",
-      "intended_path": "assets/scenes/store.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "aid",
-      "name": "物品庫前の救護所",
-      "generated_file": "exec-ccd11cfd-ac86-4c1d-94d9-69cde71cf104.png",
-      "intended_path": "assets/scenes/aid.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "service",
-      "name": "乾いた点検廊下",
-      "generated_file": "exec-52d4c10e-8fc6-4851-8271-7205f3b6a450.png",
-      "intended_path": "assets/scenes/service.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "dock",
-      "name": "桟橋",
-      "generated_file": "exec-72eb6d0e-eea0-446b-bf36-e427e9fe36ab.png",
-      "intended_path": "assets/scenes/dock.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "flood",
-      "name": "水没試験室",
-      "generated_file": "exec-5c576af1-1979-4969-afaf-21828ad37f35.png",
-      "intended_path": "assets/scenes/flood.png",
-      "status": "generated-not-received"
-    },
     {
       "id": "observatory",
       "name": "天文展示室",
