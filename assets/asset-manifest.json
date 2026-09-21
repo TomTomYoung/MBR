@@ -48,6 +48,12 @@
       "source": "inbox/e7230fe7-aab5-4810-a703-1d998903df29.png",
       "path": "assets/scenes/gate.png",
       "sha256": "8bb58758c03f817c920f3eac278f9dc431ae02cf6929185b314cb6ef61fea96f"
+    },
+    {
+      "node": "lecture",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_57 (1).png",
+      "path": "assets/scenes/lecture.png",
+      "sha256": "02fba51418dbd84dd66cb942b48b201eb609b6315c072f2e4f11f82f3e73f095"
     }
   ],
   "audio": [
@@ -55,7 +61,7 @@
       "number": "001",
       "title": "残された校庭",
       "kind": "BGM",
-      "duration_seconds": 64.0,
+      "duration_seconds": 64,
       "loop": true,
       "sample_rate": 44100,
       "channels": 2,
@@ -73,7 +79,7 @@
       "number": "002",
       "title": "焼き付いた事実",
       "kind": "BGM",
-      "duration_seconds": 64.0,
+      "duration_seconds": 64,
       "loop": true,
       "sample_rate": 44100,
       "channels": 2,
@@ -91,7 +97,7 @@
       "number": "003",
       "title": "証言の継ぎ目",
       "kind": "BGM",
-      "duration_seconds": 48.0,
+      "duration_seconds": 48,
       "loop": true,
       "sample_rate": 44100,
       "channels": 2,
@@ -109,7 +115,7 @@
       "number": "004",
       "title": "最終出席簿",
       "kind": "BGM",
-      "duration_seconds": 24.0,
+      "duration_seconds": 24,
       "loop": false,
       "sample_rate": 44100,
       "channels": 2,
@@ -127,7 +133,7 @@
       "number": "005",
       "title": "島の風と遠い波",
       "kind": "環境音",
-      "duration_seconds": 24.0,
+      "duration_seconds": 24,
       "loop": true,
       "sample_rate": 44100,
       "channels": 2,
@@ -145,7 +151,7 @@
       "number": "006",
       "title": "無人の校舎",
       "kind": "環境音",
-      "duration_seconds": 24.0,
+      "duration_seconds": 24,
       "loop": true,
       "sample_rate": 44100,
       "channels": 2,
@@ -325,7 +331,7 @@
       "number": "016",
       "title": "全件確定",
       "kind": "効果音",
-      "duration_seconds": 6.0,
+      "duration_seconds": 6,
       "loop": false,
       "sample_rate": 44100,
       "channels": 2,
@@ -379,7 +385,7 @@
       "number": "019",
       "title": "寝台を引く",
       "kind": "効果音",
-      "duration_seconds": 2.0,
+      "duration_seconds": 2,
       "loop": false,
       "sample_rate": 44100,
       "channels": 2,
@@ -523,7 +529,7 @@
       "title": "椅子と金属食器の転倒",
       "category": "合成効果音",
       "source": "deterministic procedural audio synthesis",
-      "duration_seconds": 3.0,
+      "duration_seconds": 3,
       "sample_rate": 44100,
       "channels": 2,
       "bits": 16,
@@ -795,7 +801,7 @@
       "title": "投影機の定常回転",
       "category": "合成効果音",
       "source": "deterministic procedural audio synthesis",
-      "duration_seconds": 8.0,
+      "duration_seconds": 8,
       "sample_rate": 44100,
       "channels": 2,
       "bits": 16,
@@ -1313,13 +1319,6 @@
   ],
   "pending_images": [
     {
-      "id": "lecture",
-      "name": "講堂",
-      "generated_file": "exec-d8ca685c-0f37-4ba5-85e8-5adf093b359f.png",
-      "intended_path": "assets/scenes/lecture.png",
-      "status": "generated-not-received"
-    },
-    {
       "id": "changing",
       "name": "プール更衣室",
       "generated_file": "exec-6372f197-e785-4d75-aa44-be5f61b6ddbd.png",
@@ -1544,5 +1543,5 @@
       "status": "generated-not-received"
     }
   ],
-  "updated_at": "2026-09-20"
+  "updated_at": "2026-09-21"
 }
