@@ -209,6 +209,77 @@
         "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/flood.bin",
         "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
       }
+    },
+    {
+      "node": "observatory",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_02 (23).png",
+      "path": "assets/scenes/observatory.png",
+      "sha256": "afd07f0b46e0e9b14151655c263f60a893cd1e311b9040bbd8181942d44ef502",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "6bcb73c9bfa2a73ff23d2a9524f19433fa73e090",
+        "restored_blob": "d1b3c3a3f7e4858aecf0241cbfb26412f31af02f",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/observatory.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "clock",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_02 (24).png",
+      "path": "assets/scenes/clock.png",
+      "sha256": "e9e9b72079593a1d69694b4a48acf4bccb7a79747764a31013ba1646946f9a8c",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "42ccec1477d03434ed1882e75661335e94344497",
+        "restored_blob": "5cd76108210049eaab8c1dcb9f39bce69a553003",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/clock.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "lift",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_02 (25).png",
+      "path": "assets/scenes/lift.png",
+      "sha256": "af79001438162bcb04cdd8384ffb516f0e15bc6c2f0d92a952f137202ebbb126",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "c5ce66d4a55175280a82f324bf60bb6a6e03e406",
+        "restored_blob": "6df1004a04364c8f91300e02d1bf9b00c06cae7e",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/lift.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "roof",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_03 (26).png",
+      "path": "assets/scenes/roof.png",
+      "sha256": "f5095fa9092840e42dbca328a7401e8005999e9d06765205e4bd796e9ed814e8",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "08cc5ff77470529c3d39ad6e1fc9f02813adbcc9",
+        "restored_blob": "5d2a1fa3bc6ce5f7e7d34c84f167a9cf78d55037",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/roof.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "walkway",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_03 (28).png",
+      "path": "assets/scenes/walkway.png",
+      "sha256": "d40f1340d99961525f594e7e61945e711894ab62b984be5ab9d4cbb9ef39a243",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "fc792a589277adbb353e3d871188bf71e9c05a50",
+        "restored_blob": "53d9c14d0113b6fdd074be8c5b925bf99589c7e1",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/walkway.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "shelter",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_07 (36).png",
+      "path": "assets/scenes/shelter.png",
+      "sha256": "ab17d42b53a1bc2b15add5bb7ae802fce83d5d474c3ea2bb1c2adf6b1209d26a"
     }
   ],
   "audio": [
@@ -1473,48 +1544,6 @@
     }
   ],
   "pending_images": [
-    {
-      "id": "observatory",
-      "name": "天文展示室",
-      "generated_file": "exec-b8e9e2a9-d42a-4a7d-b5d4-40ba2d84866d.png",
-      "intended_path": "assets/scenes/observatory.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "clock",
-      "name": "時計塔",
-      "generated_file": "exec-7ecd53eb-7087-42a0-963e-9054de50ec0f.png",
-      "intended_path": "assets/scenes/clock.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "lift",
-      "name": "地下貨物リフト",
-      "generated_file": "exec-17c4ff31-e313-4334-ae8d-fd91984d8fce.png",
-      "intended_path": "assets/scenes/lift.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "roof",
-      "name": "屋上リフト口",
-      "generated_file": "exec-d7fe436a-2496-4dea-9824-93ddfbbbf331.png",
-      "intended_path": "assets/scenes/roof.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "walkway",
-      "name": "外周点検通路",
-      "generated_file": "exec-9809ebdb-9b1c-4a3e-b28f-a3db13543fb7.png",
-      "intended_path": "assets/scenes/walkway.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "shelter",
-      "name": "避難所",
-      "generated_file": "exec-17f9223a-afb3-4271-ad01-82de35015018.png",
-      "intended_path": "assets/scenes/shelter.png",
-      "status": "generated-not-received"
-    },
     {
       "id": "management",
       "name": "中央管理室",

@@ -1,6 +1,6 @@
 # 素材の配置記録
 
-2026-09-21更新。装備点検室・物品庫・物品庫前の救護所・乾いた点検廊下・桟橋・水没試験室の背景6点を追加し、現在は画像29点、音47点（OGGとWAV原本各47点）です。残る背景12地点は今回未確認・未配置です。装備点検室の受領PNG破損による保留は解消しました。以下の過去記録は各作業時点の状態です。
+2026-09-21更新。天文展示室・時計塔・地下貨物リフト・屋上リフト口・外周点検通路・避難所の背景6点を追加し、現在は画像35点、音47点（OGGとWAV原本各47点）です。残る背景6地点は今回未確認・未配置です。以下の過去記録は各作業時点の状態です。
 
 ## 初回の画像
 
@@ -321,5 +321,23 @@ inbox/ChatGPT Image 2026年9月21日 05_34_57 (3).png → assets/scenes/ceiling.
 水没試験室（flood）：inbox/ChatGPT Image 2026年9月21日 05_35_01 (22).png → assets/scenes/flood.png。乾いた床・水位痕・排水口・操作端末を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/flood.binへ保管。
 
 装備点検室・物品庫前の救護所・乾いた点検廊下・桟橋・水没試験室の5枚は、正常画像をUTF-8の置換付きで復号し、CRLFをLFへ正規化して再度UTF-8で符号化すると、破損した受領データとバイト単位で完全一致しました。この一致を照合根拠として正常画像を採用し、6枚すべてのPNG読込を確認しました。物品庫は受領原本と配置画像のGit blobが一致しています。
+
+破損データは拡張子.binで保管し、manifestに受領名・正常画像のSHA256・受領blob・復旧blob・保管先・照合方法を記録しました。既存のPNG優先読込により6地点はPNG表示になります。不足一覧から該当する6地点を除外し、今回の処理は6枚で終了しています。
+
+## 2026-09-21 天文展示室から避難所までの6枚を配置
+
+天文展示室（observatory）：inbox/ChatGPT Image 2026年9月21日 05_35_02 (23).png → assets/scenes/observatory.png。投影された夜の桟橋・窓形の枠・投影機・伝声管を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/observatory.binへ保管。
+
+時計塔（clock）：inbox/ChatGPT Image 2026年9月21日 05_35_02 (24).png → assets/scenes/clock.png。塔の入口・点検口・紙片・鍵を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/clock.binへ保管。
+
+地下貨物リフト（lift）：inbox/ChatGPT Image 2026年9月21日 05_35_02 (25).png → assets/scenes/lift.png。貨物かごの内側・扉の擦り傷を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/lift.binへ保管。
+
+屋上リフト口（roof）：inbox/ChatGPT Image 2026年9月21日 05_35_03 (26).png → assets/scenes/roof.png。地下側と対応する扉の擦り傷・呼出し装置・外周通路の入口を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/roof.binへ保管。
+
+外周点検通路（walkway）：inbox/ChatGPT Image 2026年9月21日 05_35_03 (28).png → assets/scenes/walkway.png。高所の通路・手すり・足跡・投槍と貸出票を確認しました。正常画像から復旧。破損した受領データはassets/source/20260920-backgrounds/corrupt/walkway.binへ保管。
+
+避難所（shelter）：inbox/ChatGPT Image 2026年9月21日 05_35_07 (36).png → assets/scenes/shelter.png。入口の計数器・反対側の別の扉を確認しました。正常な受領原本をそのまま移動。
+
+天文展示室・時計塔・地下貨物リフト・屋上リフト口・外周点検通路の5枚は、正常画像をUTF-8の置換付きで復号し、CRLFをLFへ正規化して再度UTF-8で符号化すると、破損した受領データとバイト単位で完全一致しました。この一致を照合根拠として正常画像を採用し、6枚すべてのPNG読込を確認しました。避難所は受領原本と配置画像のGit blobが一致しています。
 
 破損データは拡張子.binで保管し、manifestに受領名・正常画像のSHA256・受領blob・復旧blob・保管先・照合方法を記録しました。既存のPNG優先読込により6地点はPNG表示になります。不足一覧から該当する6地点を除外し、今回の処理は6枚で終了しています。
