@@ -60,6 +60,12 @@
       "source": "inbox/ChatGPT Image 2026年9月21日 05_34_57 (2).png",
       "path": "assets/scenes/changing.png",
       "sha256": "39459f742d3a63ec3479afd013fa309ff10ead5c1271f65af2e1d236430f1a2e"
+    },
+    {
+      "node": "ceiling",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_57 (3).png",
+      "path": "assets/scenes/ceiling.png",
+      "sha256": "4866249bdd6d0d0051b43f8c5c86a5320927bca3a4efcae04f31f837ff1c1b7b"
     }
   ],
   "audio": [
@@ -1324,13 +1330,6 @@
     }
   ],
   "pending_images": [
-    {
-      "id": "ceiling",
-      "name": "天井点検路",
-      "generated_file": "exec-afbdea39-609a-45c2-b5d5-f7b3e9f3d308.png",
-      "intended_path": "assets/scenes/ceiling.png",
-      "status": "generated-not-received"
-    },
     {
       "id": "medical",
       "name": "医務室",
