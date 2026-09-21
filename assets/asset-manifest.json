@@ -1598,6 +1598,58 @@
       "source": "inbox/a3f6a598-9b8e-4729-aefb-35b02cd49fd0.png",
       "path": "assets/source/20260920/studio-before-banner-fix.png",
       "reason": "現場の幕が残る修正前のスタジオ。ゲームでは最終修正版を使用。"
+    },
+    {
+      "node": "equipment",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_00 (15).png",
+      "path": "assets/source/20260920-backgrounds/superseded/equipment-before-fix.png",
+      "reason": "扉上の部屋名札を空欄にした修正版を採用",
+      "selected_path": "assets/scenes/equipment.png",
+      "sha256": "cc9d73dceaea0f3f7402012a1d15edef97137dadf84bbe85cb72821a2c99d0c4",
+      "source_blob": "9bc8957e0ba50a3377c4f0873c20fffae3ab1f29",
+      "status": "superseded",
+      "generated_file": "exec-b4f7812d-aca2-427b-9be8-887a8bc138b0.png",
+      "original_sha256": "cc9d73dceaea0f3f7402012a1d15edef97137dadf84bbe85cb72821a2c99d0c4",
+      "identification": "original-byte-match"
+    },
+    {
+      "node": "shelter",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_03 (27).png",
+      "path": "assets/source/20260920-backgrounds/corrupt/shelter-before-fix.bin",
+      "reason": "計数器の数字を空欄にした修正版を採用",
+      "selected_path": "assets/scenes/shelter.png",
+      "sha256": "9c483c06cfbaafa62e913e86cc080d69829ac86df34483b1c473479892657750",
+      "source_blob": "24d2fb692b40d36b3179dfb1f3a5236c1b4c2194",
+      "status": "superseded-corrupt",
+      "generated_file": "exec-ba90768b-62cf-42f0-ac3c-0c3a21cf0b35.png",
+      "original_sha256": "bfc35346ddf20230e23f3bad96eb555f353b0186c7ee5e2dd4621197063fc3fe",
+      "identification": "utf8-replace-crlf-exact-match"
+    },
+    {
+      "node": "stairs",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_05 (30).png",
+      "path": "assets/source/20260920-backgrounds/corrupt/stairs-before-fix.bin",
+      "reason": "扉の金物を修正した版を採用",
+      "selected_path": "assets/scenes/stairs.png",
+      "sha256": "0dff8b8348efd4fa6ef570acf87e7715a349f8e4b19c4aab49737c4bfc015c4b",
+      "source_blob": "92aea786d2d125967564fbb50673cc8953da7ad8",
+      "status": "superseded-corrupt",
+      "generated_file": "exec-d51b5f92-7d42-4b4d-b56a-0e90d71ad9af.png",
+      "original_sha256": "4ac1574d4a083968c59ecfa7a47bcd3d29ab08f240896312b85e655a16b0c5b7",
+      "identification": "utf8-replace-crlf-exact-match"
+    },
+    {
+      "node": "terminal",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_06 (33).png",
+      "path": "assets/source/20260920-backgrounds/corrupt/terminal-before-fix.bin",
+      "reason": "端末の数字表示を空欄にした修正版を採用",
+      "selected_path": "assets/scenes/terminal.png",
+      "sha256": "51a784767bffd83e75915573e13e28e7133c47b1a92934aacfdacf5f03d70b95",
+      "source_blob": "4d84076a3322b8f1f72ee87866b40fecf4e86894",
+      "status": "superseded-corrupt",
+      "generated_file": "exec-17242664-4abf-42d5-9cff-4b870d626702.png",
+      "original_sha256": "8c1d85b464906e4f5903cc8307fcf217762012ad59c55e928b938d7cde07a12d",
+      "identification": "utf8-replace-crlf-exact-match"
     }
   ],
   "pending_images": [],
