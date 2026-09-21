@@ -102,6 +102,42 @@
       "source": "inbox/ChatGPT Image 2026年9月21日 05_34_59 (10).png",
       "path": "assets/scenes/wardrobe.png",
       "sha256": "49b1b9b22ec48455af62158a71605d2f217ddc714b1ba8c012e93d153e10fec2"
+    },
+    {
+      "node": "darkroom",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_59 (9).png",
+      "path": "assets/scenes/darkroom.png",
+      "sha256": "c5aa890476affb832525ebc85a35e4846e808090335d86ee65a09605bc41b010"
+    },
+    {
+      "node": "photo",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_59 (11).png",
+      "path": "assets/scenes/photo.png",
+      "sha256": "5beda99f77726254f7e92d728d967a3fd0b583bca6753978e6043c0de23f9050"
+    },
+    {
+      "node": "exhibition",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_00 (12).png",
+      "path": "assets/scenes/exhibition.png",
+      "sha256": "83a4ade31e463f1f23259fc45f4067915b0229a8b00e853565c28dc0456b0ab8"
+    },
+    {
+      "node": "post",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_00 (13).png",
+      "path": "assets/scenes/post.png",
+      "sha256": "4e7e47bc9ef268e58afad18c86514d038e883b4c5db68e1a11a4dd118918498e"
+    },
+    {
+      "node": "review",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_00 (14).png",
+      "path": "assets/scenes/review.png",
+      "sha256": "b7dc9eec0ebe05e6cc4e4f0a2c7bb04d29820d30aadaf121f8967cdab0420a16"
+    },
+    {
+      "node": "music",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_00 (16).png",
+      "path": "assets/scenes/music.png",
+      "sha256": "9d2b462a004faf57b9d37c92906a5e9ea0015ceef1666f93a604d57acdc01cd3"
     }
   ],
   "audio": [
@@ -1367,53 +1403,14 @@
   ],
   "pending_images": [
     {
-      "id": "darkroom",
-      "name": "遮光観察室",
-      "generated_file": "exec-0954dc43-bfc4-4ba7-8b54-9d06904a223c.png",
-      "intended_path": "assets/scenes/darkroom.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "photo",
-      "name": "旧写真室",
-      "generated_file": "exec-27134aaa-f6b6-4b88-a036-a228b6023d13.png",
-      "intended_path": "assets/scenes/photo.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "exhibition",
-      "name": "展示ホール",
-      "generated_file": "exec-ec3158fb-1066-43be-a5e6-b3e7eb1b29f1.png",
-      "intended_path": "assets/scenes/exhibition.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "post",
-      "name": "配達箱前",
-      "generated_file": "exec-4531ab39-bc88-49f9-84f8-cd25734b155e.png",
-      "intended_path": "assets/scenes/post.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "review",
-      "name": "規約審査室",
-      "generated_file": "exec-4b25487b-0cf3-45d8-804a-d5f72ca685bf.png",
-      "intended_path": "assets/scenes/review.png",
-      "status": "generated-not-received"
-    },
-    {
       "id": "equipment",
       "name": "装備点検室",
       "generated_file": "exec-df97db97-b04b-4859-9aa9-63e9e88cc53a.png",
       "intended_path": "assets/scenes/equipment.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "music",
-      "name": "音楽室前",
-      "generated_file": "exec-55907aed-f05a-439c-a670-0986b410d729.png",
-      "intended_path": "assets/scenes/music.png",
-      "status": "generated-not-received"
+      "status": "received-corrupt",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_01 (17).png",
+      "source_blob": "bcdc5395ee446c181ce04a49bcc7266b3ce0fe28",
+      "note": "2026-09-21確認：受領ファイルをPNGとして読み込めないため未配置。inboxに原データを残し、正常原本との照合・復旧は次回以降に行う。"
     },
     {
       "id": "store",
