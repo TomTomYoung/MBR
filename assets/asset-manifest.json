@@ -84,6 +84,24 @@
       "source": "inbox/ChatGPT Image 2026年9月21日 05_34_58 (6).png",
       "path": "assets/scenes/consult.png",
       "sha256": "0feffe392def7f536ec0bbc082adcd9df58bcbdea9e7c5fd166519f70385a508"
+    },
+    {
+      "node": "rescue",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_58 (7).png",
+      "path": "assets/scenes/rescue.png",
+      "sha256": "f29eee102e2d604f8720764fcb3bbc30c5375c9b55e2c691249a9fdada1e93a6"
+    },
+    {
+      "node": "theater",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_59 (8).png",
+      "path": "assets/scenes/theater.png",
+      "sha256": "dcaaf1dab692c3b4e801fc113ebc0ca8cd0341b17dc0c0e80e88b0f6b0e711a0"
+    },
+    {
+      "node": "wardrobe",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_59 (10).png",
+      "path": "assets/scenes/wardrobe.png",
+      "sha256": "49b1b9b22ec48455af62158a71605d2f217ddc714b1ba8c012e93d153e10fec2"
     }
   ],
   "audio": [
@@ -1348,27 +1366,6 @@
     }
   ],
   "pending_images": [
-    {
-      "id": "rescue",
-      "name": "救護廊下",
-      "generated_file": "exec-79d52ab8-9902-413e-8d2a-9a723d1077f4.png",
-      "intended_path": "assets/scenes/rescue.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "theater",
-      "name": "小劇場",
-      "generated_file": "exec-5f5cc02a-133c-4dd8-8874-6d6f5016d171.png",
-      "intended_path": "assets/scenes/theater.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "wardrobe",
-      "name": "衣装庫",
-      "generated_file": "exec-e2415789-25d1-4827-97ab-1744ab79ad1a.png",
-      "intended_path": "assets/scenes/wardrobe.png",
-      "status": "generated-not-received"
-    },
     {
       "id": "darkroom",
       "name": "遮光観察室",
