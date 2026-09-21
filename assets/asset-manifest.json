@@ -280,6 +280,63 @@
       "source": "inbox/ChatGPT Image 2026年9月21日 05_35_07 (36).png",
       "path": "assets/scenes/shelter.png",
       "sha256": "ab17d42b53a1bc2b15add5bb7ae802fce83d5d474c3ea2bb1c2adf6b1209d26a"
+    },
+    {
+      "node": "management",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_05 (29).png",
+      "path": "assets/scenes/management.png",
+      "sha256": "8caf2ae48be7ac2545be0131a5c109c1747d73f293aa95d452c5577576a8e38c",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "fd8fd302d66effde9489152df0a1557eb8582eba",
+        "restored_blob": "9f0820becdf048c7c35ee1a4d7f932ca91f7d673",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/management.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "stairs",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_07 (35).png",
+      "path": "assets/scenes/stairs.png",
+      "sha256": "33d0d05881b503776a7fb2ebd1b50249abcb10e5ea23e6c77cb0ec7577a44f18"
+    },
+    {
+      "node": "mechanism",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_06 (31).png",
+      "path": "assets/scenes/mechanism.png",
+      "sha256": "98f62daa4fc01bb412b517a9941c920e69d21425210bf20728c02ae840eb7c51",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "2390de1fff2737e9d37299bcfea28e1bdb44d606",
+        "restored_blob": "bebec50e949c9419faca03b34fc90d30957d59dc",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/mechanism.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "comms",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_06 (32).png",
+      "path": "assets/scenes/comms.png",
+      "sha256": "eb9f1ebeaca2213c43305d33724d01abd35dc2c562092c2fca156707604fc40e",
+      "recovery": {
+        "status": "restored-from-matching-original",
+        "source_blob": "4b73b148201e5ec5b76d36a67fd89ee08b71484a",
+        "restored_blob": "d3a0d9e8f408c2df3268d7b22710473002d10b06",
+        "corrupt_archive": "assets/source/20260920-backgrounds/corrupt/comms.bin",
+        "verification": "UTF-8 replacement decoding followed by CRLF-to-LF normalization of the intact image exactly reproduces the received bytes."
+      }
+    },
+    {
+      "node": "terminal",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_08 (37).png",
+      "path": "assets/scenes/terminal.png",
+      "sha256": "431edb8d1a9457b25042ec229f378ad4f1aca9ace3fece0f9cf2e02616aaf777"
+    },
+    {
+      "node": "south",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_35_07 (34).png",
+      "path": "assets/scenes/south.png",
+      "sha256": "58ec7303e9f603dbcb41caa4ca3cd45dc22135053251a6bda1c9bff9e10577ac"
     }
   ],
   "audio": [
@@ -1543,49 +1600,6 @@
       "reason": "現場の幕が残る修正前のスタジオ。ゲームでは最終修正版を使用。"
     }
   ],
-  "pending_images": [
-    {
-      "id": "management",
-      "name": "中央管理室",
-      "generated_file": "exec-08852c7d-3d1b-4106-ae93-4b50711dfa86.png",
-      "intended_path": "assets/scenes/management.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "stairs",
-      "name": "非常階段",
-      "generated_file": "exec-054f1fd3-ec04-487c-9d0e-29ec949968b1.png",
-      "intended_path": "assets/scenes/stairs.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "mechanism",
-      "name": "中央機構室",
-      "generated_file": "exec-5cb6bbd5-bd7b-4eea-b9be-2d6062a45419.png",
-      "intended_path": "assets/scenes/mechanism.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "comms",
-      "name": "非常通信室",
-      "generated_file": "exec-a5cb13ae-960d-492e-a3c1-2374d2431fdb.png",
-      "intended_path": "assets/scenes/comms.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "terminal",
-      "name": "最終報告室",
-      "generated_file": "exec-c9fb88f2-b05b-48c7-949f-a1023b23ca5e.png",
-      "intended_path": "assets/scenes/terminal.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "south",
-      "name": "南門",
-      "generated_file": "exec-9e292744-e1f3-404d-ad7d-f388cc90549a.png",
-      "intended_path": "assets/scenes/south.png",
-      "status": "generated-not-received"
-    }
-  ],
+  "pending_images": [],
   "updated_at": "2026-09-21"
 }
