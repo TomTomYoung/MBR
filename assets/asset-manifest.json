@@ -54,6 +54,12 @@
       "source": "inbox/ChatGPT Image 2026年9月21日 05_34_57 (1).png",
       "path": "assets/scenes/lecture.png",
       "sha256": "02fba51418dbd84dd66cb942b48b201eb609b6315c072f2e4f11f82f3e73f095"
+    },
+    {
+      "node": "changing",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_57 (2).png",
+      "path": "assets/scenes/changing.png",
+      "sha256": "39459f742d3a63ec3479afd013fa309ff10ead5c1271f65af2e1d236430f1a2e"
     }
   ],
   "audio": [
@@ -1318,13 +1324,6 @@
     }
   ],
   "pending_images": [
-    {
-      "id": "changing",
-      "name": "プール更衣室",
-      "generated_file": "exec-6372f197-e785-4d75-aa44-be5f61b6ddbd.png",
-      "intended_path": "assets/scenes/changing.png",
-      "status": "generated-not-received"
-    },
     {
       "id": "ceiling",
       "name": "天井点検路",
