@@ -66,6 +66,24 @@
       "source": "inbox/ChatGPT Image 2026年9月21日 05_34_57 (3).png",
       "path": "assets/scenes/ceiling.png",
       "sha256": "4866249bdd6d0d0051b43f8c5c86a5320927bca3a4efcae04f31f837ff1c1b7b"
+    },
+    {
+      "node": "medical",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_57 (4).png",
+      "path": "assets/scenes/medical.png",
+      "sha256": "0be4a767542e5b9d8e823cbeaf98c65359231bc20b4c93004ff1768a052e6ece"
+    },
+    {
+      "node": "morgue",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_58 (5).png",
+      "path": "assets/scenes/morgue.png",
+      "sha256": "2a78188e63ed19dff3cb5c015e5a2bb64f6d39b36db582f15d052b6badd069e9"
+    },
+    {
+      "node": "consult",
+      "source": "inbox/ChatGPT Image 2026年9月21日 05_34_58 (6).png",
+      "path": "assets/scenes/consult.png",
+      "sha256": "0feffe392def7f536ec0bbc082adcd9df58bcbdea9e7c5fd166519f70385a508"
     }
   ],
   "audio": [
@@ -1330,27 +1348,6 @@
     }
   ],
   "pending_images": [
-    {
-      "id": "medical",
-      "name": "医務室",
-      "generated_file": "exec-efc61a25-548c-4052-b91a-ede8c763d4e6.png",
-      "intended_path": "assets/scenes/medical.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "morgue",
-      "name": "安置庫",
-      "generated_file": "exec-f20989b7-d2e6-45da-bb97-ab359b54aa58.png",
-      "intended_path": "assets/scenes/morgue.png",
-      "status": "generated-not-received"
-    },
-    {
-      "id": "consult",
-      "name": "防音相談室",
-      "generated_file": "exec-52453a55-f012-423c-aec0-397043fefb16.png",
-      "intended_path": "assets/scenes/consult.png",
-      "status": "generated-not-received"
-    },
     {
       "id": "rescue",
       "name": "救護廊下",
