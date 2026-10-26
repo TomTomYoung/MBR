@@ -1,10 +1,10 @@
-import { gameData } from './data/game.js';
+import { defaultGameData } from './data/editions.js';
 import { solutions } from './data/solutions.js';
 
 export const SAVE_VERSION = 1;
 const ids = (items) => new Map(items.map((x) => [x.id, x]));
 export class Investigation {
-  constructor(data = gameData, answers = solutions) {
+  constructor(data = defaultGameData, answers = solutions) {
     this.data = data;
     this.answers = answers;
     this.nodes = ids(data.nodes);
@@ -16,6 +16,7 @@ export class Investigation {
   fresh() {
     return {
       version: SAVE_VERSION,
+      edition: this.data.edition ?? 1,
       node: 'gate',
       unlocked: ['gate'],
       visited: ['gate'],
@@ -148,6 +149,10 @@ export class Investigation {
     }
     if (!s || s.version !== SAVE_VERSION || !this.nodes.has(s.node))
       throw new Error('このセーブ形式には対応していません。');
+    // Saves written before edition support belong to the unchanged first edition.
+    const edition = s.edition === undefined ? 1 : s.edition;
+    if (edition !== (this.data.edition ?? 1))
+      throw new Error('このセーブは別の版の調査記録です。対応する版で読み込んでください。');
     const lists = {
       unlocked: this.nodes,
       visited: this.nodes,
@@ -182,7 +187,7 @@ export class Investigation {
       throw new Error('調査状態の対応が壊れています。');
     const prev = this.state;
     try {
-      this.state = { ...this.fresh(), ...s, reports: {}, started: !!s.started };
+      this.state = { ...this.fresh(), ...s, edition, reports: {}, started: !!s.started };
       for (const [id, report] of Object.entries(s.reports)) {
         if (!report || typeof report !== 'object' || Array.isArray(report))
           throw new Error('回答の形式が壊れています。');

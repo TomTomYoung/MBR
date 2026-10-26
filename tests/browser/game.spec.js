@@ -31,7 +31,7 @@ test('new game: discovery, interrupted replay, testimony, unlock, save and map j
   await page.getByRole('button', { name: '再現する：寝台の下の人型' }).click();
   await page.getByRole('button', { name: '再現を中断する' }).click();
   expect(
-    JSON.parse(await page.evaluate(() => localStorage.getItem('mbr-investigation-v1'))).replayed,
+    JSON.parse(await page.evaluate(() => localStorage.getItem('mbr-investigation-v2'))).replayed,
   ).toHaveLength(0);
   await page.getByRole('button', { name: '再現する：寝台の下の人型' }).click();
   for (let i = 0; i < 4; i++) await page.locator('#next-line').click();
@@ -53,7 +53,7 @@ test('report form confirms arbitrary three, locks them, and completes final case
   const e = fullSave();
   const ids = [caseId(7), caseId(23), caseId(14)];
   await page.addInitScript(
-    (save) => localStorage.setItem('mbr-investigation-v1', save),
+    (save) => localStorage.setItem('mbr-investigation-v2', save),
     e.exportSave(),
   );
   await page.goto('/');
@@ -67,13 +67,13 @@ test('report form confirms arbitrary three, locks them, and completes final case
   for (const [id, answer] of Object.entries(solutions)) completed.setReport(id, answer);
   completed.checkReports();
   await page.evaluate((save) => {
-    localStorage.setItem('mbr-investigation-v1', save);
+    localStorage.setItem('mbr-investigation-v2', save);
   }, completed.exportSave());
   // Navigate in a fresh context without the original seed script.
   const final = await page.context().browser().newPage();
   await final.goto('/');
   await final.evaluate(
-    (save) => localStorage.setItem('mbr-investigation-v1', save),
+    (save) => localStorage.setItem('mbr-investigation-v2', save),
     completed.exportSave(),
   );
   await final.reload();
