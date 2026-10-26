@@ -2,17 +2,21 @@ import Phaser from 'phaser';
 import '@fontsource/noto-serif-jp/400.css';
 import '@fontsource/noto-sans-jp/400.css';
 import './style.css';
-import { Investigation } from './engine.js';
+import { EditionStorage, investigationFromSave } from './edition-storage.js';
+import { editions } from './data/editions.js';
 import { ArchiveScene } from './scene.js';
 import { ArchiveAudio } from './audio.js';
 import { audioAssets } from './audio-assets.js';
 import { replaySounds, outdoorNodes } from './data/media.js';
-import { nodes, people, weapons, causes, markers, intro, ending } from './data/game.js';
+import { nodes, people, weapons, causes, markers } from './data/game.js';
 
 const $ = (id) => document.getElementById(id);
-const engine = new Investigation();
+const editionStorage = new EditionStorage({
+  getItem: (key) => localStorage.getItem(key),
+  setItem: (key, value) => localStorage.setItem(key, value),
+});
+let engine = editionStorage.engine;
 const audio = new ArchiveAudio(audioAssets);
-const SAVE_KEY = 'mbr-investigation-v1';
 const book = $('book'),
   replay = $('replay');
 let scene,
@@ -20,13 +24,7 @@ let scene,
   activeReplay = null,
   toastTimer,
   muted = true,
-  restoreWarning = '';
-try {
-  const saved = localStorage.getItem(SAVE_KEY);
-  if (saved) engine.loadSave(saved);
-} catch (error) {
-  restoreWarning = `保存データを読み込めませんでした。${error.message} 調査は新しく始められます。`;
-}
+  restoreWarning = editionStorage.warning;
 const name = (id) => people.find((p) => p.id === id)?.name || 'なし（事故）';
 const label = (id) => engine.cases.get(id)?.label || '共通資料';
 function el(tag, text, className) {
@@ -41,11 +39,10 @@ function button(text, handler, className = '') {
   return b;
 }
 function save() {
-  try {
-    localStorage.setItem(SAVE_KEY, engine.exportSave());
+  if (editionStorage.save()) {
     $('save-status').textContent = '調査を保存しました';
-  } catch {
-    $('save-status').textContent = '自動保存ができません。手引きから書き出してください。';
+  } else {
+    $('save-status').textContent = editionStorage.warning;
   }
 }
 function toast(text) {
@@ -90,6 +87,7 @@ function unlockedMessage(ids) {
 function render(message) {
   const s = engine.state,
     n = engine.nodes.get(s.node);
+  $('edition-label').textContent = editionStorage.edition.label;
   $('confirmed-count').textContent = String(s.confirmed.length).padStart(2, '0');
   $('progress-fill').style.width = `${(s.confirmed.length / 40) * 100}%`;
   $('record-count').textContent = s.records.length;
@@ -99,7 +97,7 @@ function render(message) {
   $('scene-label').textContent =
     mode === 'map'
       ? 'MAP / CONNECTIONS'
-      : `SCENE / ${String(nodes.indexOf(n) + 1).padStart(2, '0')}`;
+      : `SCENE / ${String(nodes.findIndex((node) => node.id === n.id) + 1).padStart(2, '0')}`;
   $('scene-hint').textContent =
     mode === 'map'
       ? '解放済みの地点へは、未訪問でも移動できる。'
@@ -532,8 +530,21 @@ function showPeople() {
   root.append(grid);
 }
 function showSettings() {
-  const root = openBook('調査の手引き・保存');
+  const root = openBook('オプション・手引き・保存');
   root.className = 'guide';
+  root.append(
+    el('h3', '文章の版'),
+    selectField(
+      'プレイする版',
+      Object.values(editions).map((edition) => [String(edition.id), edition.label]),
+      String(editionStorage.edition.id),
+      (value) => switchEdition(Number(value)),
+    ),
+    el(
+      'p',
+      '初期設定は第2版です。進行・リポート・メモは版ごとに保存され、切り替えるとその版の続きから再開します。',
+    ),
+  );
   const sections = [
     [
       '残された空間',
@@ -576,7 +587,7 @@ function showSettings() {
       );
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'hakusho-investigation.json';
+      a.download = `hakusho-investigation-v${editionStorage.edition.id}.json`;
       a.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     }),
@@ -595,15 +606,22 @@ function showSettings() {
     }
     try {
       const raw = await f.text();
-      const candidate = new Investigation();
-      candidate.loadSave(raw);
-      if (!window.confirm('現在の調査を、選んだセーブに置き換えますか？')) return;
-      engine.loadSave(raw);
+      const candidate = investigationFromSave(raw);
+      const target = editions[candidate.data.edition];
+      if (
+        !window.confirm(
+          `${target.label}の調査を、選んだセーブに置き換えますか？ ほかの版の調査は残ります。`,
+        )
+      )
+        return;
+      editionStorage.activate(candidate);
+      engine = editionStorage.engine;
+      restoreWarning = '';
       mode = 'explore';
       save();
       render();
       book.close();
-      toast('調査記録を読み込みました。');
+      toast(editionStorage.warning || `${target.label}の調査記録を読み込みました。`);
     } catch (e) {
       toast(e.message);
     }
@@ -619,7 +637,12 @@ function showSettings() {
   const danger = el('div', null, 'danger');
   danger.append(
     button('調査を最初からやり直す', () => {
-      if (!window.confirm('現在の調査記録を消して、正門からやり直しますか？')) return;
+      if (
+        !window.confirm(
+          `${editionStorage.edition.label}の調査を消して、正門からやり直しますか？ ほかの版の調査は残ります。`,
+        )
+      )
+        return;
       engine.reset();
       mode = 'explore';
       save();
@@ -630,11 +653,31 @@ function showSettings() {
   );
   root.append(danger);
 }
+function switchEdition(id) {
+  try {
+    editionStorage.select(id);
+    engine = editionStorage.engine;
+    restoreWarning = '';
+    mode = 'explore';
+    audio.stopEffects();
+    render();
+    if (engine.state.started) showSettings();
+    else showIntro();
+    if (editionStorage.warning) {
+      $('save-status').textContent = editionStorage.warning;
+      toast(editionStorage.warning);
+    }
+  } catch (error) {
+    showSettings();
+    toast(`版を切り替えられませんでした。${error.message}`);
+  }
+}
 function showIntro() {
   const root = openBook('白鐘学園・最終出席簿', 'PROLOGUE / 白い輪郭');
   root.className = 'onboarding';
+  root.append(el('p', editionStorage.edition.label, 'eyebrow'));
   root.append(el('p', '四十人の最期を、記録する。', 'cover-line'));
-  for (const p of intro) root.append(el('p', p));
+  for (const p of engine.data.intro) root.append(el('p', p));
   if (restoreWarning) root.append(el('p', restoreWarning));
   root.append(
     button(
@@ -648,17 +691,18 @@ function showIntro() {
       'primary',
     ),
   );
+  root.append(button('オプション・版の切替', showSettings));
 }
 function showEnding() {
   const root = openBook('最終出席簿', 'EPILOGUE / 40 RECORDS');
   root.className = 'ending';
-  for (const p of ending) root.append(el('p', p));
+  for (const p of engine.data.ending) root.append(el('p', p));
   root.append(button('記録を読み返す', () => showReports(), 'primary'));
 }
 // Clear presentation class whenever another book section replaces its content.
 const observer = new MutationObserver(() => {
   if (
-    !['調査の手引き・保存', '白鐘学園・最終出席簿', '最終出席簿'].includes(
+    !['オプション・手引き・保存', '白鐘学園・最終出席簿', '最終出席簿'].includes(
       $('book-title').textContent,
     )
   )

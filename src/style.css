@@ -333,6 +333,8 @@ dialog::backdrop {
 }
 .book-head button {
   font-size: 12px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 #book-content {
   padding: 24px 28px 34px;

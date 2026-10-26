@@ -2,6 +2,8 @@
 
 証拠と証言を手掛かりに、四十人の生徒の最期を調べるコマンド選択型ミステリーです。HTML・JavaScript・Phaser 3で実装しています。
 
+**初期設定は第2版です。** GAMEBOOKの文章モデルv1.2bを使い、全40事件の再現・証拠・証言、41地点の情景、導入と結末を改稿しました。「オプション・保存」→「プレイする版」から初版へ切り替えられます。進行・リポート・メモは版ごとに保存し、次回は選んだ版から再開します。従来のセーブは初版として読み込めます。[改稿方針と参照元](doc/scenario/EDITION_2.md)
+
 [ブラウザで遊ぶ（GitHub Pages）](https://tomtomyoung.github.io/MBR/)
 
 ![保健室の探索画面](doc/screenshots/exploration.png)
@@ -32,7 +34,7 @@ npm run dev
 
 41地点、40事件、43個の人型、123件の証拠、117件の証言、40人の名簿、全件確定後の結末を収録しています。証拠・証言による解放はリポートの正解に依存しません。終盤の無人の現場、同地点の複数事件、移送された遺体、複数地点に分かれた人型も扱います。
 
-地点画は8枚の漫画調PNGと、PNG未受領33地点を補う白黒SVGです。旧SVG41枚も保持しています。追加背景33枚は制作済みで、PNG本体の受領待ちです。音はBGM4曲・環境音2種・効果音41種（全47音源）を収録し、音ONで場面に応じて再生します。人の台詞の音声収録は含みません。素材の配置記録は[inbox/ASSET_PLACEMENT.md](inbox/ASSET_PLACEMENT.md)、不足一覧は[inbox/MISSING_ASSETS.md](inbox/MISSING_ASSETS.md)を参照してください。
+地点画は41地点の漫画調PNGです。旧SVG41枚も保持しています。音はBGM4曲・環境音2種・効果音41種（全47音源）を収録し、音ONで場面に応じて再生します。人の台詞の音声収録は含みません。素材の配置記録は[inbox/ASSET_PLACEMENT.md](inbox/ASSET_PLACEMENT.md)を参照してください。
 
 ## ビルドと検証
 
@@ -52,8 +54,8 @@ mainへの更新は、テスト・資料整合性・ビルド・ブラウザ操�
 
 ## 資料と編集
 
-[資料の入口](doc/README.md)、[確定仕様](doc/design/SPEC.md)、[全事件本文](doc/scenario/PLAYABLE_CASES.md)、[地点と解放条件](doc/scenario/NODES.md)、[実装状況](doc/STATUS.md)を参照してください。事件本文と正解にはネタバレが含まれます。
+[資料の入口](doc/README.md)、[確定仕様](doc/design/SPEC.md)、[第2版の全事件本文](doc/scenario/PLAYABLE_CASES_V2.md)、[第2版の地点と解放条件](doc/scenario/NODES_V2.md)、[実装状況](doc/STATUS.md)を参照してください。[初版の本文](doc/scenario/PLAYABLE_CASES.md)も保持しています。事件本文と正解にはネタバレが含まれます。
 
-src/data/case-text.jsは手作業で書いた発見再現と証拠の本文、world.jsは空間と解放条件、game.jsはゲーム用の関係、solutions.jsは採点用正解です。engine.jsが進行を管理し、scene.jsがPhaserで地点と地図を描き、main.jsがコマンド・手帳・リポートを扱います。
+src/data/case-text.jsとworld.jsは初版の本文・空間、game.jsはゲーム用の関係、solutions.jsは採点用正解です。第2版の正本はcase-text-v2.jsとworld-text-v2.js。editions.jsが版のデータを組み立て、edition-storage.jsが版選択と個別保存を扱います。engine.jsが進行を管理し、scene.jsがPhaserで地点と地図を描き、main.jsがコマンド・手帳・リポートを扱います。
 
 npm run docsは実装データから資料を更新します。node scripts/create-scenes.jsは地点画を再生成するので、手描きで差し替えた画像を保持したい場合は実行しないでください。

@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { readdirSync } from 'node:fs';
 import { Investigation } from '../../src/engine.js';
 import { gameData } from '../../src/data/game.js';
 
@@ -26,7 +27,10 @@ test('PNG scenes load, real audio is opt-in, replay sounds stop on interrupt and
   });
   await page.goto('/');
   await page.getByRole('button', { name: '調査を始める →' }).click();
-  expect(pngs.size).toBe(8);
+  const expectedPngs = readdirSync(new URL('../../assets/scenes/', import.meta.url)).filter(
+    (file) => file.endsWith('.png'),
+  );
+  expect(pngs.size).toBe(expectedPngs.length);
   expect(await page.evaluate(() => window.__media.length)).toBe(0);
   await page.locator('#sound-toggle').click();
   await expect
@@ -84,7 +88,7 @@ test('additional cues load, projector stops on line advance, and terminal cues w
   engine.state.started = true;
   engine.travel('observatory', { jump: true });
   await page.addInitScript((save) => {
-    localStorage.setItem('mbr-investigation-v1', save);
+    localStorage.setItem('mbr-investigation-v2', save);
     const OriginalAudio = window.Audio;
     window.__media = [];
     window.Audio = function (...args) {
